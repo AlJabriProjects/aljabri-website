@@ -1,272 +1,389 @@
+# ALJABRI PROJECTS — COMPLETE COMPANY WEBSITE
+
+هذا موقع شركة كامل مبني على هوية ملف البروفايل المرفوع. fileciteturn5file0
+
+انسخ الكود بالكامل داخل ملف:
+
+```html
+index.html
+```
+
+ثم ارفعه إلى GitHub أو Vercel.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>ALJABRI PROJECTS</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    font-family:'Cairo',sans-serif;
-    background:#0b0b0b;
-    color:white;
-    overflow-x:hidden;
+font-family:'Cairo',sans-serif;
+background:#0b0b0b;
+color:white;
+overflow-x:hidden;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:22px 7%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.85);
+backdrop-filter:blur(10px);
+z-index:1000;
+border-bottom:1px solid rgba(255,208,0,.15);
+}
+
+.logo{
+font-size:34px;
+font-weight:900;
+color:#ffd000;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin-left:28px;
+font-weight:700;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd000;
 }
 
 .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    overflow:hidden;
-}
-
-.hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:
-    linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),
-    url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop');
-    background-size:cover;
-    background-position:center;
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:120px 20px 80px;
+background:
+linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
+url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1800&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
 }
 
 .hero-content{
-    position:relative;
-    z-index:2;
-    padding:20px;
+max-width:1100px;
 }
 
 .hero h1{
-    font-size:90px;
-    color:#ffd000;
-    font-weight:900;
-    line-height:1;
-    text-shadow:0 0 30px rgba(255,208,0,0.4);
+font-size:92px;
+line-height:1;
+font-weight:900;
+color:#ffd000;
+margin-bottom:20px;
+text-shadow:0 0 30px rgba(255,208,0,.35);
 }
 
 .hero h2{
-    font-size:45px;
-    margin-top:20px;
-    font-weight:800;
+font-size:44px;
+margin-bottom:30px;
 }
 
 .hero p{
-    max-width:900px;
-    margin:30px auto;
-    font-size:22px;
-    line-height:2;
-    color:#ddd;
+font-size:22px;
+line-height:2;
+color:#d9d9d9;
+max-width:950px;
+margin:auto auto 40px;
 }
 
 .btn{
-    display:inline-block;
-    padding:18px 45px;
-    background:#ffd000;
-    color:black;
-    text-decoration:none;
-    font-weight:900;
-    border-radius:12px;
-    transition:0.3s;
+display:inline-block;
+padding:18px 42px;
+background:#ffd000;
+color:black;
+font-weight:900;
+text-decoration:none;
+border-radius:10px;
+transition:.3s;
 }
 
 .btn:hover{
-    transform:translateY(-5px);
-    box-shadow:0 0 20px #ffd000;
+transform:translateY(-5px);
+background:white;
+}
+
+.stats{
+padding:80px 8%;
+background:#111;
+}
+
+.stats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+}
+
+.stat-box{
+background:#181818;
+padding:45px 25px;
+text-align:center;
+border-radius:20px;
+border:1px solid rgba(255,208,0,.15);
+}
+
+.stat-box h3{
+font-size:60px;
+color:#ffd000;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:22px;
+color:#ddd;
+}
+
+section{
+padding:120px 8%;
 }
 
 .section-title{
-    text-align:center;
-    font-size:55px;
-    margin-bottom:70px;
-    color:#ffd000;
-    font-weight:900;
+font-size:58px;
+text-align:center;
+margin-bottom:25px;
+font-weight:900;
+color:#ffd000;
 }
 
-.products{
-    padding:100px 8%;
-    background:#111;
+.section-desc{
+max-width:900px;
+margin:0 auto 70px;
+text-align:center;
+font-size:20px;
+line-height:2;
+color:#cfcfcf;
 }
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
+.products-grid,
+.services-grid,
+.management-grid,
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
 }
 
 .card{
-    background:#1a1a1a;
-    border-radius:20px;
-    overflow:hidden;
-    border:1px solid #333;
-    transition:0.4s;
+background:#171717;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #2d2d2d;
+transition:.35s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 0 25px rgba(255,208,0,0.3);
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(255,208,0,.18);
 }
 
 .card img{
-    width:100%;
-    height:260px;
-    object-fit:cover;
+width:100%;
+height:260px;
+object-fit:cover;
 }
 
 .card-content{
-    padding:25px;
+padding:28px;
 }
 
 .card h3{
-    color:#ffd000;
-    font-size:30px;
-    margin-bottom:15px;
+font-size:30px;
+margin-bottom:15px;
+color:#ffd000;
 }
 
 .card p{
-    line-height:2;
-    color:#ddd;
+line-height:2;
+color:#ddd;
+font-size:17px;
 }
 
 .about{
-    padding:120px 8%;
-    background:#0e0e0e;
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:60px;
-    align-items:center;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
 }
 
 .about img{
-    width:100%;
-    border-radius:20px;
+width:100%;
+border-radius:22px;
+height:100%;
+object-fit:cover;
 }
 
-.about h2{
-    font-size:55px;
-    color:#ffd000;
-    margin-bottom:25px;
+.about-content h2{
+font-size:58px;
+margin-bottom:25px;
+color:#ffd000;
 }
 
-.about p{
-    line-height:2.2;
-    font-size:20px;
-    color:#ddd;
+.about-content p{
+font-size:20px;
+line-height:2.2;
+color:#ddd;
+margin-bottom:25px;
 }
 
-.services{
-    padding:120px 8%;
-    background:#151515;
+.management-card{
+background:#191919;
+padding:40px 30px;
+text-align:center;
+border-radius:20px;
+border:1px solid rgba(255,208,0,.15);
 }
 
-.service-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:30px;
+.management-card img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+margin:auto auto 20px;
+border:4px solid #ffd000;
 }
 
-.service-box{
-    background:#1f1f1f;
-    padding:40px 30px;
-    border-radius:20px;
-    text-align:center;
-    border:1px solid #333;
+.management-card h3{
+font-size:30px;
+color:#ffd000;
+margin-bottom:10px;
 }
 
-.service-box h3{
-    color:#ffd000;
-    font-size:28px;
-    margin-bottom:20px;
+.management-card p{
+color:#d7d7d7;
 }
 
-.service-box p{
-    color:#ddd;
-    line-height:2;
-}
-
-.contact{
-    padding:120px 8%;
-    background:black;
+.contact-section{
+background:#0a0a0a;
 }
 
 .contact-box{
-    max-width:900px;
-    margin:auto;
-    background:#1a1a1a;
-    border:2px solid #ffd000;
-    border-radius:25px;
-    padding:60px;
-    text-align:center;
+max-width:1000px;
+margin:auto;
+background:#171717;
+padding:70px;
+border-radius:30px;
+border:2px solid #ffd000;
+text-align:center;
 }
 
 .contact-box h2{
-    font-size:55px;
-    color:#ffd000;
-    margin-bottom:40px;
+font-size:58px;
+margin-bottom:35px;
+color:#ffd000;
 }
 
-.contact-info{
-    font-size:24px;
-    line-height:2.5;
+.contact-box p{
+font-size:24px;
+line-height:2.5;
 }
 
-.footer{
-    background:#050505;
-    padding:30px;
-    text-align:center;
-    color:#777;
+footer{
+background:#050505;
+padding:35px;
+text-align:center;
+color:#777;
 }
 
-@media(max-width:900px){
+.whatsapp{
+position:fixed;
+bottom:30px;
+right:30px;
+width:70px;
+height:70px;
+border-radius:50%;
+background:#25D366;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:36px;
+text-decoration:none;
+color:white;
+z-index:999;
+box-shadow:0 0 25px rgba(0,0,0,.5);
+}
+
+@media(max-width:950px){
+
+nav{
+display:none;
+}
 
 .hero h1{
-    font-size:50px;
+font-size:52px;
 }
 
 .hero h2{
-    font-size:28px;
+font-size:28px;
+}
+
+.hero p{
+font-size:18px;
 }
 
 .about{
-    grid-template-columns:1fr;
+grid-template-columns:1fr;
 }
 
-.about h2{
-    font-size:40px;
+.section-title,
+.about-content h2,
+.contact-box h2{
+font-size:40px;
 }
 
-.section-title{
-    font-size:40px;
+.contact-box{
+padding:45px 25px;
+}
+
+.contact-box p{
+font-size:18px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
 
-<section class="hero">
+<header>
+<div class="logo">ALJABRI</div>
 
+<nav>
+<a href="#products">Products</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#gallery">Projects</a>
+<a href="#management">Management</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
 <div class="hero-content">
 
 <h1>ALJABRI PROJECTS</h1>
@@ -274,120 +391,112 @@ body{
 <h2>CRUSHING & SCREENING SOLUTIONS</h2>
 
 <p>
-Supply, Installation, Maintenance and Spare Parts
-for Crusher Plants, Quarry Equipment and Industrial
-Material Handling Systems.
+ALJABRI PROJECTS specializes in industrial crushing systems, screening plants,
+quarry management, conveyor systems, heavy equipment maintenance and spare parts
+solutions across Oman and GCC markets.
 </p>
 
-<a href="#products" class="btn">
-OUR PRODUCTS
-</a>
+<a href="#products" class="btn">EXPLORE PRODUCTS</a>
+
+</div>
+</section>
+
+<section class="stats">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h3>20+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h3>250+</h3>
+<p>Permanent Clients</p>
+</div>
+
+<div class="stat-box">
+<h3>30+</h3>
+<p>Production Lines</p>
+</div>
+
+<div class="stat-box">
+<h3>10+</h3>
+<p>Operational Sites</p>
+</div>
 
 </div>
 
 </section>
 
-<section class="products" id="products">
+<section id="products">
 
-<h2 class="section-title">
-OUR PRODUCTS
-</h2>
+<h2 class="section-title">OUR PRODUCTS</h2>
 
-<div class="grid">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1590649880765-91b1956b8276?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-
-<h3>JAW CRUSHER</h3>
-
-<p>
-Heavy duty primary crusher designed for crushing
-hard stones and mining materials.
+<p class="section-desc">
+Heavy-duty industrial equipment designed for quarry operations,
+aggregate production and mining industries.
 </p>
 
+<div class="products-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1590649880765-91b1956b8276?q=80&w=1400&auto=format&fit=crop">
+<div class="card-content">
+<h3>Jaw Crushers</h3>
+<p>
+Primary crushing systems designed for granite, basalt and hard stone applications.
+</p>
 </div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
-
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop">
 <div class="card-content">
-
-<h3>CONE CRUSHER</h3>
-
+<h3>Cone Crushers</h3>
 <p>
-High performance crushing solutions for mining
-and aggregate production industries.
+Secondary and tertiary crushing solutions with high productivity and reliability.
 </p>
-
 </div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
-
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop">
 <div class="card-content">
-
-<h3>IMPACT CRUSHER</h3>
-
+<h3>Impact Crushers</h3>
 <p>
-Efficient impact crushing technology with superior
-particle shaping capability.
+Efficient crushing technology delivering premium aggregate particle shape.
 </p>
-
 </div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop">
-
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1400&auto=format&fit=crop">
 <div class="card-content">
-
-<h3>VSI MACHINE</h3>
-
+<h3>Vibrating Screens</h3>
 <p>
-Vertical shaft impact crushers for sand production
-and aggregate shaping.
+Industrial screening systems for accurate material separation.
 </p>
-
 </div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
-
+<img src="https://images.unsplash.com/photo-1581092921461-eab10380b4df?q=80&w=1400&auto=format&fit=crop">
 <div class="card-content">
-
-<h3>VIBRATING SCREENS</h3>
-
+<h3>Conveyor Systems</h3>
 <p>
-Accurate screening systems for separating materials
-into multiple sizes.
+Heavy-duty conveyor systems for transporting quarry and mining materials.
 </p>
-
 </div>
 </div>
 
 <div class="card">
-
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
-
+<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1400&auto=format&fit=crop">
 <div class="card-content">
-
-<h3>CONVEYOR BELTS</h3>
-
+<h3>Industrial Production Lines</h3>
 <p>
-Industrial conveyor systems for transporting quarry
-and mining materials safely.
+Complete crushing and screening production line solutions.
 </p>
-
 </div>
 </div>
 
@@ -395,78 +504,164 @@ and mining materials safely.
 
 </section>
 
-<section class="about">
+<section id="services">
 
-<img src="https://images.unsplash.com/photo-1581092921461-eab10380b4df?q=80&w=1200&auto=format&fit=crop">
+<h2 class="section-title">OUR SERVICES</h2>
 
-<div>
-
-<h2>
-QUARRY MANAGEMENT
-</h2>
-
-<p>
-ALJABRI PROJECTS provides complete quarry
-management and crushing plant solutions including
-extraction, crushing, screening, maintenance and
-production optimization.
-
-We focus on increasing productivity, reducing
-operating costs and delivering reliable industrial
-solutions for mining and construction sectors.
+<p class="section-desc">
+Comprehensive industrial services for crushing plants,
+quarries and material handling systems.
 </p>
 
-</div>
+<div class="services-grid">
 
-</section>
-
-<section class="services">
-
-<h2 class="section-title">
-OUR SERVICES
-</h2>
-
-<div class="service-grid">
-
-<div class="service-box">
-<h3>SUPPLY</h3>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1400&auto=format&fit=crop">
+<div class="card-content">
+<h3>Crusher Manufacturing</h3>
 <p>
-Crusher machines, spare parts and industrial equipment.
+Design and manufacturing of high-performance crushing systems.
 </p>
 </div>
-
-<div class="service-box">
-<h3>INSTALLATION</h3>
-<p>
-Professional crusher plant installation services.
-</p>
 </div>
 
-<div class="service-box">
-<h3>MAINTENANCE</h3>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop">
+<div class="card-content">
+<h3>Quarry Management</h3>
 <p>
-Preventive and corrective maintenance solutions.
+Professional quarry operation management and production optimization.
 </p>
 </div>
+</div>
 
-<div class="service-box">
-<h3>SPARE PARTS</h3>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop">
+<div class="card-content">
+<h3>Maintenance Services</h3>
 <p>
-High quality wear parts and industrial accessories.
+Preventive maintenance and industrial technical support solutions.
 </p>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1400&auto=format&fit=crop">
+<div class="card-content">
+<h3>Equipment Rental</h3>
+<p>
+Flexible rental solutions for crushers and industrial equipment.
+</p>
+</div>
 </div>
 
 </div>
 
 </section>
 
-<section class="contact">
+<section id="about">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop">
+
+<div class="about-content">
+
+<h2>ABOUT ALJABRI</h2>
+
+<p>
+ALJABRI PROJECTS continuously pushes the boundaries of industrial innovation to deliver reliable crushing and screening solutions.
+</p>
+
+<p>
+We provide industrial engineering services, spare parts, production line solutions and quarry management systems designed for maximum efficiency.
+</p>
+
+<p>
+Our mission is to help clients increase productivity, reduce operating costs and build sustainable industrial operations.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="section-title">PROJECT GALLERY</h2>
+
+<p class="section-desc">
+Real industrial environments, crushing plants and quarry operations.
+</p>
+
+<div class="gallery-grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092921461-eab10380b4df?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1400&auto=format&fit=crop">
+</div>
+
+</div>
+
+</section>
+
+<section id="management">
+
+<h2 class="section-title">MANAGEMENT TEAM</h2>
+
+<p class="section-desc">
+Experienced leadership focused on industrial growth and innovation.
+</p>
+
+<div class="management-grid">
+
+<div class="management-card">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop">
+<h3>Mohamad Al Jabri</h3>
+<p>Owner & Founder</p>
+</div>
+
+<div class="management-card">
+<img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop">
+<h3>Ahmad Al Jabri</h3>
+<p>General Manager</p>
+</div>
+
+<div class="management-card">
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=600&auto=format&fit=crop">
+<h3>Mohamad Sharaf</h3>
+<p>Public Relations Manager</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact-section" id="contact">
 
 <div class="contact-box">
 
 <h2>CONTACT US</h2>
-
-<div class="contact-info">
 
 <p>📞 +968 9224 3919</p>
 <p>📞 +968 9275 7720</p>
@@ -481,16 +676,16 @@ High quality wear parts and industrial accessories.
 
 </div>
 
-</div>
-
 </section>
 
-<div class="footer">
-
+<footer>
 © 2026 ALJABRI PROJECTS — ALL RIGHTS RESERVED
+</footer>
 
-</div>
+<a class="whatsapp" href="https://wa.me/96892757720" target="_blank">
+☎
+</a>
 
 </body>
-
 </html>
+```
