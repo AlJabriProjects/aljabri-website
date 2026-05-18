@@ -1,144 +1,228 @@
-export default function AlJabriWebsite() {
+export default function AlJabriIndustrialWebsite() {
+  const products = [
+    {
+      title: 'Jaw Crusher',
+      image: '/mnt/data/image(145).png',
+      desc: 'كسارات فكية صناعية عالية الأداء للمحاجر وخطوط الإنتاج.'
+    },
+    {
+      title: 'Impact Crusher',
+      image: '/mnt/data/image(146).png',
+      desc: 'حلول تكسير قوية بإنتاجية عالية واستهلاك منخفض.'
+    },
+    {
+      title: 'Vibrating Screen',
+      image: '/mnt/data/image(147).png',
+      desc: 'غرابيل صناعية دقيقة لفرز المواد بمختلف الأحجام.'
+    },
+    {
+      title: 'Cone Crusher',
+      image: '/mnt/data/image(148).png',
+      desc: 'معدات تكسير مخروطية احترافية للعمليات الثقيلة.'
+    },
+    {
+      title: 'Conveyor Belt',
+      image: '/mnt/data/image(149).png',
+      desc: 'سيور ناقلة صناعية مصممة للعمل المتواصل.'
+    }
+  ];
+
   const gallery = [
-    "/mnt/data/image(130).png",
-    "/mnt/data/image(131).png",
-    "/mnt/data/image(132).png",
-    "/mnt/data/image(133).png",
-    "/mnt/data/image(134).png",
-    "/mnt/data/image(136).png",
-    "/mnt/data/image(137).png",
-    "/mnt/data/image(138).png",
-    "/mnt/data/image(139).png",
-    "/mnt/data/image(140).png",
-    "/mnt/data/image(141).png",
-    "/mnt/data/image(142).png",
-    "/mnt/data/image(143).png",
-    "/mnt/data/image(144).png",
-    "/mnt/data/image(145).png",
-    "/mnt/data/image(146).png",
-    "/mnt/data/image(147).png",
-    "/mnt/data/image(148).png",
-    "/mnt/data/image(149).png",
-    "/mnt/data/image(150).png"
+    '/mnt/data/image(130).png',
+    '/mnt/data/image(131).png',
+    '/mnt/data/image(132).png',
+    '/mnt/data/image(133).png',
+    '/mnt/data/image(134).png',
+    '/mnt/data/image(136).png',
+    '/mnt/data/image(137).png',
+    '/mnt/data/image(138).png'
   ];
 
   return (
-    <div className="bg-black text-white min-h-screen font-sans">
-      <section className="relative h-screen overflow-hidden flex items-center justify-center">
+    <div className="bg-black text-white min-h-screen overflow-hidden font-sans">
+      <header className="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur border-b border-zinc-800">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+          <div className="flex items-center gap-4">
+            <img src="/mnt/data/image(130).png" className="w-16 h-16 object-cover rounded-xl" />
+            <div>
+              <h1 className="font-black text-2xl tracking-wide text-yellow-400">ALJABRI</h1>
+              <p className="text-xs text-zinc-400">IDEAL PROJECTS FOR INVESTMENTS</p>
+            </div>
+          </div>
+
+          <nav className="hidden md:flex gap-8 text-sm uppercase tracking-widest text-zinc-300">
+            <a href="#about" className="hover:text-yellow-400 transition">About</a>
+            <a href="#products" className="hover:text-yellow-400 transition">Products</a>
+            <a href="#services" className="hover:text-yellow-400 transition">Services</a>
+            <a href="#projects" className="hover:text-yellow-400 transition">Projects</a>
+            <a href="#contact" className="hover:text-yellow-400 transition">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <section className="relative h-screen flex items-center justify-center text-center">
         <img
-          src={gallery[0]}
+          src="/mnt/data/image(132).png"
           className="absolute inset-0 w-full h-full object-cover opacity-30"
-          alt="hero"
         />
 
-        <div className="relative z-10 text-center px-6">
-          <h1 className="text-6xl md:text-8xl font-black tracking-wide text-yellow-400">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black"></div>
+
+        <div className="relative z-10 px-6 max-w-5xl">
+          <p className="tracking-[10px] uppercase text-zinc-400 mb-6 text-sm">
+            Company Profile Presentation
+          </p>
+
+          <h1 className="text-6xl md:text-8xl font-black leading-tight text-yellow-400">
             ALJABRI
           </h1>
-          <p className="mt-6 text-2xl md:text-3xl font-light">
-            IDEAL PROJECTS FOR INVESTMENTS
-          </p>
-          <p className="mt-8 max-w-3xl mx-auto text-gray-300 text-lg leading-8">
-            تصنيع خطوط الكسارات والمحاجر والمعدات الصناعية وحلول الإنتاج المتكاملة
-            بأعلى المعايير الهندسية.
+
+          <p className="mt-6 text-2xl md:text-3xl font-light text-white">
+            Industrial Solutions & Crusher Production Lines
           </p>
 
-          <div className="mt-10 flex flex-wrap justify-center gap-4">
-            <button className="bg-yellow-400 text-black px-8 py-4 rounded-2xl font-bold hover:scale-105 transition">
-              تواصل معنا
+          <p className="mt-10 text-zinc-300 text-lg leading-9 max-w-3xl mx-auto">
+            متخصصون في تصنيع خطوط الكسارات والمحاجر والمعدات الصناعية
+            وحلول الإنتاج المتكاملة للقطاع الصناعي والإنشائي.
+          </p>
+
+          <div className="mt-12 flex flex-wrap justify-center gap-6">
+            <button className="bg-yellow-400 text-black px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition duration-300">
+              اطلب عرض سعر
             </button>
-            <button className="border border-yellow-400 text-yellow-400 px-8 py-4 rounded-2xl font-bold hover:bg-yellow-400 hover:text-black transition">
-              أعمالنا
+
+            <button className="border border-yellow-400 text-yellow-400 px-10 py-5 rounded-2xl font-black text-lg hover:bg-yellow-400 hover:text-black transition duration-300">
+              استعرض المنتجات
             </button>
           </div>
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-zinc-950">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
-          <div className="bg-yellow-400 text-black rounded-3xl p-10 shadow-2xl">
-            <h2 className="text-6xl font-black">20</h2>
-            <p className="mt-4 text-2xl font-bold">سنوات خبرة</p>
-          </div>
-
-          <div className="bg-yellow-400 text-black rounded-3xl p-10 shadow-2xl">
-            <h2 className="text-6xl font-black">250+</h2>
-            <p className="mt-4 text-2xl font-bold">عميل دائم</p>
-          </div>
-
-          <div className="bg-yellow-400 text-black rounded-3xl p-10 shadow-2xl">
-            <h2 className="text-6xl font-black">30+</h2>
-            <p className="mt-4 text-2xl font-bold">خط إنتاج</p>
-          </div>
-
-          <div className="bg-yellow-400 text-black rounded-3xl p-10 shadow-2xl">
-            <h2 className="text-6xl font-black">10+</h2>
-            <p className="mt-4 text-2xl font-bold">مواقع عاملة</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex items-center justify-between mb-14 flex-wrap gap-4">
-            <div>
-              <h2 className="text-5xl font-black text-yellow-400">من نحن</h2>
-              <p className="text-gray-400 mt-4 max-w-2xl leading-8">
-                شركة الجابري متخصصة في تصنيع خطوط الكسارات والمحاجر والمعدات
-                الصناعية وتقديم حلول متكاملة لقطاع الإنتاج والإنشاءات.
-              </p>
+      <section className="py-24 bg-zinc-950">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          {[
+            ['20+', 'سنوات خبرة'],
+            ['250+', 'عميل دائم'],
+            ['30+', 'خط إنتاج'],
+            ['10+', 'مواقع تشغيل']
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-yellow-400 text-black rounded-[35px] p-10 text-center shadow-2xl"
+            >
+              <h2 className="text-6xl font-black">{item[0]}</h2>
+              <p className="mt-5 text-2xl font-bold">{item[1]}</p>
             </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="about" className="py-32 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+          <div>
+            <p className="uppercase tracking-[8px] text-zinc-500 mb-6">About Company</p>
+
+            <h2 className="text-5xl md:text-6xl font-black text-yellow-400 leading-tight">
+              حلول صناعية متكاملة
+            </h2>
+
+            <div className="w-32 h-1 bg-yellow-400 mt-8 mb-10"></div>
+
+            <p className="text-zinc-300 leading-9 text-lg mb-8">
+              شركة الجابري متخصصة في تصميم وتصنيع خطوط الكسارات والمحاجر
+              والمعدات الصناعية بأحدث المعايير الهندسية.
+            </p>
+
+            <p className="text-zinc-400 leading-9 text-lg mb-8">
+              نقدم حلولاً متكاملة تشمل التصنيع، التركيب، الصيانة، إدارة
+              المحاجر، وتوريد خطوط الإنتاج الكاملة.
+            </p>
+
+            <button className="bg-yellow-400 text-black px-8 py-4 rounded-2xl font-black hover:scale-105 transition">
+              المزيد عنا
+            </button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <div className="relative">
             <img
-              src={gallery[4]}
-              className="rounded-3xl shadow-2xl border border-yellow-400"
-              alt="about"
+              src="/mnt/data/image(133).png"
+              className="rounded-[40px] shadow-2xl border border-yellow-400"
             />
 
-            <div className="space-y-6 text-lg text-gray-300 leading-9">
-              <p>
-                نعمل على تطوير وتصنيع معدات صناعية عالية الجودة تلبي احتياجات
-                السوق المحلي والخليجي.
-              </p>
-              <p>
-                نعتمد على الخبرة الهندسية، والجودة، والالتزام بالمواعيد، وتقديم
-                حلول عملية تناسب طبيعة المشاريع المختلفة.
-              </p>
-              <p>
-                تشمل خدماتنا تصميم وتصنيع وصيانة وتأجير معدات وخطوط الإنتاج.
-              </p>
+            <div className="absolute -bottom-10 -left-10 bg-yellow-400 text-black p-8 rounded-3xl shadow-2xl">
+              <h3 className="text-5xl font-black">20+</h3>
+              <p className="font-bold text-xl mt-2">Years Experience</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-zinc-950">
+      <section id="products" className="py-32 bg-zinc-950 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-black text-center text-yellow-400 mb-16">
-            خدماتنا
-          </h2>
+          <div className="text-center mb-20">
+            <p className="uppercase tracking-[8px] text-zinc-500 mb-6">Our Products</p>
+            <h2 className="text-6xl font-black text-yellow-400">معدات وخطوط إنتاج</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {products.map((product, index) => (
+              <div
+                key={index}
+                className="group bg-black border border-zinc-800 rounded-[35px] overflow-hidden hover:border-yellow-400 transition duration-500"
+              >
+                <div className="overflow-hidden h-[320px] bg-white">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-contain p-6 group-hover:scale-110 transition duration-500"
+                  />
+                </div>
+
+                <div className="p-8">
+                  <h3 className="text-3xl font-black mb-4 text-yellow-400">
+                    {product.title}
+                  </h3>
+
+                  <p className="text-zinc-400 leading-8 mb-8">
+                    {product.desc}
+                  </p>
+
+                  <button className="w-full bg-yellow-400 text-black py-4 rounded-2xl font-black hover:scale-105 transition">
+                    تفاصيل المنتج
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="py-32 px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-20">
+            <p className="uppercase tracking-[8px] text-zinc-500 mb-6">Our Services</p>
+            <h2 className="text-6xl font-black text-yellow-400">خدماتنا</h2>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              "تصنيع خطوط الإنتاج",
-              "صيانة الكسارات",
-              "إدارة المحاجر",
-              "تأجير المعدات"
+              'تصنيع خطوط الإنتاج',
+              'صيانة الكسارات',
+              'إدارة المحاجر',
+              'تأجير المعدات'
             ].map((service, index) => (
               <div
                 key={index}
-                className="bg-black border border-yellow-400 rounded-3xl p-8 hover:-translate-y-2 transition"
+                className="bg-zinc-950 border border-zinc-800 rounded-[35px] p-10 hover:border-yellow-400 hover:-translate-y-3 transition duration-500"
               >
-                <div className="w-16 h-16 rounded-full bg-yellow-400 text-black flex items-center justify-center text-2xl font-black mb-6">
+                <div className="w-20 h-20 rounded-full bg-yellow-400 text-black flex items-center justify-center text-3xl font-black mb-8">
                   {index + 1}
                 </div>
 
-                <h3 className="text-2xl font-bold mb-4">{service}</h3>
+                <h3 className="text-2xl font-black mb-6">{service}</h3>
 
-                <p className="text-gray-400 leading-8">
-                  حلول متكاملة بأعلى معايير الجودة والكفاءة التشغيلية.
+                <p className="text-zinc-400 leading-8">
+                  خدمات صناعية متكاملة بأعلى معايير الجودة والكفاءة التشغيلية.
                 </p>
               </div>
             ))}
@@ -146,22 +230,22 @@ export default function AlJabriWebsite() {
         </div>
       </section>
 
-      <section className="py-24 px-6">
+      <section id="projects" className="py-32 bg-zinc-950 px-6">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-5xl font-black text-center text-yellow-400 mb-16">
-            معرض الأعمال
-          </h2>
+          <div className="text-center mb-20">
+            <p className="uppercase tracking-[8px] text-zinc-500 mb-6">Projects Gallery</p>
+            <h2 className="text-6xl font-black text-yellow-400">معرض المشاريع</h2>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {gallery.map((img, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900 hover:border-yellow-400 transition"
+                className="overflow-hidden rounded-[35px] border border-zinc-800 hover:border-yellow-400 transition duration-500"
               >
                 <img
                   src={img}
-                  alt={`gallery-${index}`}
-                  className="w-full h-80 object-cover hover:scale-105 transition duration-500"
+                  className="w-full h-[380px] object-cover hover:scale-110 transition duration-700"
                 />
               </div>
             ))}
@@ -169,55 +253,57 @@ export default function AlJabriWebsite() {
         </div>
       </section>
 
-      <section className="py-24 px-6 bg-zinc-950">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <section id="contact" className="py-32 px-6">
+        <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-14">
           <div>
-            <h2 className="text-5xl font-black text-yellow-400 mb-10">
+            <p className="uppercase tracking-[8px] text-zinc-500 mb-6">Contact Us</p>
+
+            <h2 className="text-6xl font-black text-yellow-400 mb-10">
               تواصل معنا
             </h2>
 
-            <div className="space-y-6 text-xl text-gray-300">
-              <p>+968 9275 7720</p>
-              <p>+968 9224 3919</p>
-              <p>+968 7170 4621</p>
-              <p>+968 9607 6337</p>
-              <p>info@aljabri.co</p>
-              <p>www.aljabri.co</p>
-              <p>صحار - سلطنة عمان</p>
-              <p>الشارقة - الإمارات العربية المتحدة</p>
+            <div className="space-y-6 text-xl text-zinc-300 leading-9">
+              <p>📞 +968 9275 7720</p>
+              <p>📞 +968 9224 3919</p>
+              <p>📞 +968 7170 4621</p>
+              <p>📞 +968 9607 6337</p>
+              <p>✉️ info@aljabri.co</p>
+              <p>🌐 www.aljabri.co</p>
+              <p>📍 Sohar - Sultanate of Oman</p>
+              <p>📍 Sharjah - United Arab Emirates</p>
             </div>
           </div>
 
-          <div className="bg-black border border-yellow-400 rounded-3xl p-10">
+          <div className="bg-zinc-950 border border-zinc-800 rounded-[35px] p-10">
             <form className="space-y-6">
               <input
                 type="text"
                 placeholder="الاسم"
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-4"
+                className="w-full p-5 rounded-2xl bg-black border border-zinc-700 focus:border-yellow-400 outline-none"
               />
 
               <input
                 type="email"
                 placeholder="البريد الإلكتروني"
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-4"
+                className="w-full p-5 rounded-2xl bg-black border border-zinc-700 focus:border-yellow-400 outline-none"
               />
 
               <textarea
                 rows="6"
                 placeholder="رسالتك"
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-2xl p-4"
+                className="w-full p-5 rounded-2xl bg-black border border-zinc-700 focus:border-yellow-400 outline-none"
               ></textarea>
 
-              <button className="w-full bg-yellow-400 text-black font-black py-4 rounded-2xl hover:scale-105 transition">
-                إرسال
+              <button className="w-full bg-yellow-400 text-black py-5 rounded-2xl font-black text-lg hover:scale-105 transition duration-300">
+                إرسال الرسالة
               </button>
             </form>
           </div>
         </div>
       </section>
 
-      <footer className="py-10 border-t border-zinc-800 text-center text-gray-500">
-        © 2026 ALJABRI - ALL RIGHTS RESERVED
+      <footer className="border-t border-zinc-800 py-10 text-center text-zinc-500">
+        © 2026 ALJABRI INDUSTRIAL SOLUTIONS - ALL RIGHTS RESERVED
       </footer>
     </div>
   );
