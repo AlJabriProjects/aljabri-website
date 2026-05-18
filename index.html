@@ -114,19 +114,19 @@ text-align:center;
 overflow:hidden;
 }
 
-.hero img{
+.hero video{
 position:absolute;
 width:100%;
 height:100%;
 object-fit:cover;
-opacity:0.2;
+opacity:0.22;
 }
 
 .hero::after{
 content:'';
 position:absolute;
 inset:0;
-background:linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.92));
+background:linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.94));
 }
 
 .hero-content{
@@ -137,7 +137,7 @@ max-width:1100px;
 }
 
 .hero h1{
-font-size:100px;
+font-size:110px;
 font-weight:900;
 color:#ffd000;
 line-height:1;
@@ -145,7 +145,7 @@ text-shadow:0 0 35px rgba(255,208,0,0.4);
 }
 
 .hero h2{
-font-size:42px;
+font-size:44px;
 margin-top:20px;
 margin-bottom:25px;
 }
@@ -297,11 +297,32 @@ color:#ddd;
 margin-bottom:20px;
 }
 
+.project{
+background:#171717;
+border-radius:20px;
+overflow:hidden;
+border:1px solid #2a2a2a;
+}
+
 .project img{
 width:100%;
-height:320px;
+height:280px;
 object-fit:cover;
-border-radius:20px;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+color:#ffd000;
+font-size:28px;
+margin-bottom:12px;
+}
+
+.project-content p{
+line-height:2;
+color:#ddd;
 }
 
 .contact-box{
@@ -367,7 +388,7 @@ display:flex;
 }
 
 .hero h1{
-font-size:55px;
+font-size:58px;
 }
 
 .hero h2{
@@ -422,18 +443,17 @@ padding:40px 25px;
 <div class="mobile-menu" id="mobileMenu">
 
 <a href="#products" onclick="toggleMenu()">Products</a>
-
 <a href="#services" onclick="toggleMenu()">Services</a>
-
 <a href="#projects" onclick="toggleMenu()">Projects</a>
-
 <a href="#contact" onclick="toggleMenu()">Contact</a>
 
 </div>
 
 <section class="hero">
 
-<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop">
+<video autoplay muted loop playsinline>
+<source src="https://cdn.coverr.co/videos/coverr-construction-site-1560094551713?download=1080p" type="video/mp4">
+</video>
 
 <div class="hero-content">
 
@@ -587,14 +607,26 @@ with focus on industrial quality and reliability.
 
 <div class="project">
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
+<div class="project-content">
+<h3>150 TPH Crushing Plant</h3>
+<p>Sohar - Oman | Complete quarry crushing and screening installation.</p>
+</div>
 </div>
 
 <div class="project">
 <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop">
+<div class="project-content">
+<h3>Industrial Conveyor System</h3>
+<p>Heavy-duty conveyor production line for aggregate transport.</p>
+</div>
 </div>
 
 <div class="project">
 <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
+<div class="project-content">
+<h3>Screening Production Unit</h3>
+<p>Integrated vibrating screen and material separation system.</p>
+</div>
 </div>
 
 </div>
