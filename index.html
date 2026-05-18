@@ -114,12 +114,14 @@ text-align:center;
 overflow:hidden;
 }
 
-.hero video{
+.hero-banner{
 position:absolute;
 width:100%;
 height:100%;
 object-fit:cover;
-opacity:0.22;
+top:0;
+left:0;
+opacity:0.35;
 }
 
 .hero::after{
@@ -306,8 +308,8 @@ border:1px solid #2a2a2a;
 
 .project img{
 width:100%;
-height:280px;
-object-fit:cover;
+height:auto;
+display:block;
 }
 
 .project-content{
@@ -451,9 +453,7 @@ padding:40px 25px;
 
 <section class="hero">
 
-<video autoplay muted loop playsinline>
-<source src="https://cdn.coverr.co/videos/coverr-construction-site-1560094551713?download=1080p" type="video/mp4">
-</video>
+<img src="banner.jpg" class="hero-banner">
 
 <div class="hero-content">
 
@@ -577,7 +577,7 @@ Request Quote
 
 <div class="about">
 
-<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop">
+<img src="banner.jpg">
 
 <div>
 
@@ -601,34 +601,10 @@ with focus on industrial quality and reliability.
 
 <section id="projects">
 
-<h2 class="section-title">COMPLETED PROJECTS</h2>
-
-<div class="projects-grid">
+<h2 class="section-title">COMPANY PROFILE</h2>
 
 <div class="project">
-<img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop">
-<div class="project-content">
-<h3>150 TPH Crushing Plant</h3>
-<p>Sohar - Oman | Complete quarry crushing and screening installation.</p>
-</div>
-</div>
-
-<div class="project">
-<img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop">
-<div class="project-content">
-<h3>Industrial Conveyor System</h3>
-<p>Heavy-duty conveyor production line for aggregate transport.</p>
-</div>
-</div>
-
-<div class="project">
-<img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop">
-<div class="project-content">
-<h3>Screening Production Unit</h3>
-<p>Integrated vibrating screen and material separation system.</p>
-</div>
-</div>
-
+<img src="banner.jpg">
 </div>
 
 </section>
