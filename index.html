@@ -1,11 +1,15 @@
+# AL JABRI PROJECTS — Premium Website Code
+
+انسخ كامل الكود التالي وضعه داخل ملف `index.html` في GitHub بدل الكود القديم.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AL JABRI PROJECTS</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
 
 <style>
 
@@ -18,9 +22,14 @@ font-family:'Cairo',sans-serif;
 }
 
 body{
-background:#0d0d0d;
+background:#0b0b0b;
 color:white;
 overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
 }
 
 header{
@@ -28,27 +37,28 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.85);
+padding:22px 7%;
+background:rgba(0,0,0,0.8);
 backdrop-filter:blur(10px);
-z-index:1000;
-border-bottom:1px solid rgba(255,204,0,0.2);
+z-index:999;
+border-bottom:1px solid rgba(255,204,0,0.15);
 }
 
 .logo{
-font-size:30px;
+font-size:32px;
 font-weight:900;
 color:#ffcc00;
+letter-spacing:1px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin-left:30px;
-font-weight:600;
+margin-left:28px;
+font-weight:700;
 transition:0.3s;
 }
 
@@ -59,24 +69,45 @@ color:#ffcc00;
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop');
+linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.8)),
+url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=2074&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
 display:flex;
 align-items:center;
 padding:0 8%;
+position:relative;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:120px;
+background:linear-gradient(transparent,#0b0b0b);
 }
 
 .hero-content{
-max-width:750px;
+max-width:850px;
+position:relative;
+z-index:2;
+}
+
+.hero-sub{
+color:#ffcc00;
+font-size:22px;
+font-weight:800;
+margin-bottom:18px;
+letter-spacing:2px;
 }
 
 .hero h1{
-font-size:75px;
-line-height:1.1;
+font-size:84px;
+line-height:1.05;
 font-weight:900;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
 .hero h1 span{
@@ -85,104 +116,78 @@ color:#ffcc00;
 
 .hero p{
 font-size:22px;
-color:#ccc;
-margin-bottom:35px;
-line-height:1.8;
+line-height:1.9;
+color:#d0d0d0;
+margin-bottom:40px;
+max-width:760px;
 }
 
 .btn{
 display:inline-block;
-padding:16px 38px;
+padding:18px 42px;
 background:#ffcc00;
 color:black;
-font-weight:700;
+font-weight:800;
 text-decoration:none;
 border-radius:6px;
-transition:0.3s;
+transition:0.35s;
 }
 
 .btn:hover{
-transform:translateY(-4px);
 background:white;
+transform:translateY(-5px);
 }
 
 .section{
-padding:120px 8%;
+padding:110px 8%;
 }
 
 .section-title{
-font-size:48px;
-margin-bottom:60px;
-color:#ffcc00;
-text-align:center;
+font-size:54px;
 font-weight:900;
-}
-
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:30px;
-}
-
-.card{
-background:#171717;
-padding:40px 30px;
-border-radius:14px;
-transition:0.3s;
-border:1px solid rgba(255,204,0,0.15);
-}
-
-.card:hover{
-transform:translateY(-10px);
-border-color:#ffcc00;
-}
-
-.card h3{
-font-size:28px;
-margin-bottom:20px;
+text-align:center;
+margin-bottom:18px;
 color:#ffcc00;
 }
 
-.card p{
-color:#bbb;
+.section-desc{
+text-align:center;
+max-width:850px;
+margin:0 auto 70px;
+font-size:20px;
 line-height:1.9;
+color:#bdbdbd;
 }
 
-.projects{
+.stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:30px;
-}
-
-.project{
-overflow:hidden;
-border-radius:14px;
+margin-top:-80px;
+padding:0 8% 70px;
 position:relative;
+z-index:10;
 }
 
-.project img{
-width:100%;
-height:320px;
-object-fit:cover;
-transition:0.4s;
+.stat-box{
+background:#141414;
+padding:45px 20px;
+text-align:center;
+border-radius:16px;
+border:1px solid rgba(255,204,0,0.15);
+box-shadow:0 15px 35px rgba(0,0,0,0.4);
 }
 
-.project:hover img{
-transform:scale(1.1);
-}
-
-.overlay{
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-padding:25px;
-background:linear-gradient(transparent,rgba(0,0,0,0.95));
-}
-
-.overlay h3{
+.stat-box h3{
+font-size:56px;
 color:#ffcc00;
-font-size:28px;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:20px;
+font-weight:700;
+color:#d0d0d0;
 }
 
 .about{
@@ -193,41 +198,194 @@ align-items:center;
 }
 
 .about img{
-width:100%;
+height:100%;
+object-fit:cover;
 border-radius:20px;
 }
 
-.about-text h2{
-font-size:50px;
-color:#ffcc00;
+.about-content h2{
+font-size:56px;
 margin-bottom:25px;
+color:#ffcc00;
 }
 
-.about-text p{
-color:#ccc;
+.about-content p{
+font-size:20px;
 line-height:2;
-font-size:18px;
+color:#c9c9c9;
+margin-bottom:22px;
 }
 
-.contact{
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+gap:30px;
+}
+
+.service-card{
+background:#141414;
+padding:45px 35px;
+border-radius:18px;
+transition:0.35s;
+border:1px solid rgba(255,204,0,0.12);
+}
+
+.service-card:hover{
+transform:translateY(-12px);
+border-color:#ffcc00;
+}
+
+.service-card h3{
+font-size:32px;
+margin-bottom:22px;
+color:#ffcc00;
+}
+
+.service-card p{
+line-height:2;
+color:#bfbfbf;
+font-size:17px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+}
+
+.product-card{
+background:#131313;
+border-radius:18px;
+overflow:hidden;
+border:1px solid rgba(255,204,0,0.12);
+transition:0.35s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+}
+
+.product-card img{
+height:260px;
+width:100%;
+object-fit:cover;
+}
+
+.product-content{
+padding:32px;
+}
+
+.product-content h3{
+font-size:30px;
+color:#ffcc00;
+margin-bottom:15px;
+}
+
+.product-content p{
+line-height:1.9;
+color:#c7c7c7;
+}
+
+.team{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+
+.team-card{
+background:#151515;
+padding:40px 30px;
 text-align:center;
+border-radius:18px;
+border:1px solid rgba(255,204,0,0.15);
 }
 
-.contact p{
-font-size:22px;
-color:#ccc;
-margin-bottom:20px;
+.team-card h3{
+font-size:28px;
+margin-top:20px;
+color:#ffcc00;
+}
+
+.team-card p{
+margin-top:10px;
+color:#bfbfbf;
+}
+
+.quote{
+background:
+linear-gradient(rgba(0,0,0,0.82),rgba(0,0,0,0.82)),
+url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+text-align:center;
+padding:140px 10%;
+}
+
+.quote h2{
+font-size:56px;
+line-height:1.4;
+max-width:1000px;
+margin:auto;
+font-weight:900;
+}
+
+.quote span{
+color:#ffcc00;
+}
+
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+.contact-box{
+background:#141414;
+padding:45px;
+border-radius:18px;
+border:1px solid rgba(255,204,0,0.15);
+}
+
+.contact-box h3{
+font-size:34px;
+margin-bottom:25px;
+color:#ffcc00;
+}
+
+.contact-box p{
+font-size:18px;
+line-height:2;
+color:#d0d0d0;
+margin-bottom:12px;
 }
 
 footer{
+background:black;
 padding:40px;
 text-align:center;
-background:#000;
 color:#777;
-border-top:1px solid rgba(255,204,0,0.2);
+border-top:1px solid rgba(255,204,0,0.15);
 }
 
-@media(max-width:900px){
+.whatsapp{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#25D366;
+color:white;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:34px;
+text-decoration:none;
+z-index:999;
+box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+@media(max-width:950px){
 
 header{
 padding:20px;
@@ -238,22 +396,30 @@ display:none;
 }
 
 .hero h1{
-font-size:48px;
+font-size:52px;
 }
 
-.about{
+.hero p{
+font-size:18px;
+}
+
+.about,
+.contact-grid{
 grid-template-columns:1fr;
 }
 
-.section{
-padding:90px 6%;
+.section-title{
+font-size:42px;
+}
+
+.quote h2{
+font-size:36px;
 }
 
 }
 
 </style>
 </head>
-
 <body>
 
 <header>
@@ -261,9 +427,10 @@ padding:90px 6%;
 
 <nav>
 <a href="#home">Home</a>
-<a href="#services">Services</a>
-<a href="#projects">Projects</a>
 <a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#products">Products</a>
+<a href="#team">Management</a>
 <a href="#contact">Contact</a>
 </nav>
 </header>
@@ -272,18 +439,74 @@ padding:90px 6%;
 
 <div class="hero-content">
 
+<div class="hero-sub">
+HEAVY INDUSTRIAL SOLUTIONS
+</div>
+
 <h1>
-Industrial <span>Crushing</span><br>
-& Screening Solutions
+Industrial Crushing
+<span>& Screening</span>
+Systems
 </h1>
 
 <p>
-AL JABRI PROJECTS specializes in crushing plants, screening systems,
-industrial solutions, spare parts, maintenance and engineering support
-across Oman and GCC.
+AL JABRI PROJECTS specializes in crushers, quarry management,
+industrial production lines, conveyor systems, maintenance and heavy-duty engineering solutions across Oman and GCC.
 </p>
 
 <a href="#contact" class="btn">Contact Us</a>
+
+</div>
+
+</section>
+
+<div class="stats">
+
+<div class="stat-box">
+<h3>20+</h3>
+<p>Years Experience</p>
+</div>
+
+<div class="stat-box">
+<h3>30+</h3>
+<p>Production Lines</p>
+</div>
+
+<div class="stat-box">
+<h3>250+</h3>
+<p>Permanent Clients</p>
+</div>
+
+<div class="stat-box">
+<h3>10+</h3>
+<p>Operational Sites</p>
+</div>
+
+</div>
+
+<section class="section" id="about">
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1974&auto=format&fit=crop">
+
+<div class="about-content">
+
+<h2>About AL JABRI</h2>
+
+<p>
+At AL JABRI PROJECTS, we continuously push the boundaries of innovation to deliver high-quality industrial products and crushing solutions.
+</p>
+
+<p>
+Our products are trusted across major quarries in GCC countries, supported by advanced manufacturing technologies and engineering expertise.
+</p>
+
+<p>
+We specialize in crusher manufacturing, quarry management, industrial fabrication, maintenance and spare parts solutions.
+</p>
+
+</div>
 
 </div>
 
@@ -293,33 +516,37 @@ across Oman and GCC.
 
 <h2 class="section-title">Our Services</h2>
 
+<p class="section-desc">
+Professional industrial solutions designed for heavy-duty production environments and quarry operations.
+</p>
+
 <div class="services">
 
-<div class="card">
-<h3>Supply</h3>
+<div class="service-card">
+<h3>Crusher Manufacturing</h3>
 <p>
-Complete crushing and screening equipment supply with high industrial standards.
+Design and production of jaw crushers, cone crushers, impact crushers, VSI systems and heavy industrial equipment.
 </p>
 </div>
 
-<div class="card">
-<h3>Installation</h3>
+<div class="service-card">
+<h3>Quarry Management</h3>
 <p>
-Professional installation and setup for crushers, conveyors and industrial systems.
+Efficient planning, extraction, production optimization, environmental sustainability and operational management.
 </p>
 </div>
 
-<div class="card">
-<h3>Maintenance</h3>
+<div class="service-card">
+<h3>Maintenance Services</h3>
 <p>
-Heavy-duty maintenance solutions and technical support for all plant operations.
+Preventive maintenance, repairs, predictive inspections and spare parts replacement for industrial plants.
 </p>
 </div>
 
-<div class="card">
-<h3>Spare Parts</h3>
+<div class="service-card">
+<h3>Equipment Rental</h3>
 <p>
-Premium quality crusher wear parts and industrial spare parts solutions.
+Flexible rental solutions for crushers and industrial production lines with technical support and maintenance.
 </p>
 </div>
 
@@ -327,74 +554,173 @@ Premium quality crusher wear parts and industrial spare parts solutions.
 
 </section>
 
-<section class="section" id="projects">
+<section class="section" id="products">
 
-<h2 class="section-title">Projects</h2>
+<h2 class="section-title">Our Products</h2>
 
-<div class="projects">
+<p class="section-desc">
+High performance industrial equipment engineered for maximum productivity and durability.
+</p>
 
-<div class="project">
+<div class="products">
+
+<div class="product-card">
 <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=2070&auto=format&fit=crop">
-<div class="overlay">
-<h3>Jaw Crushers</h3>
+
+<div class="product-content">
+<h3>Jaw Crusher</h3>
+<p>
+Heavy-duty primary crushing solution designed for granite, basalt and quarry applications with maximum reliability.
+</p>
 </div>
 </div>
 
-<div class="project">
+<div class="product-card">
 <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2070&auto=format&fit=crop">
-<div class="overlay">
-<h3>Screening Plants</h3>
+
+<div class="product-content">
+<h3>Impact Crusher</h3>
+<p>
+Advanced impact crushing systems delivering high reduction ratios and premium aggregate production.
+</p>
 </div>
 </div>
 
-<div class="project">
+<div class="product-card">
 <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=2070&auto=format&fit=crop">
-<div class="overlay">
+
+<div class="product-content">
 <h3>Conveyor Systems</h3>
+<p>
+Industrial conveyor systems engineered for heavy material transportation and quarry operations.
+</p>
 </div>
 </div>
 
-</div>
-
-</section>
-
-<section class="section about" id="about">
-
+<div class="product-card">
 <img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1974&auto=format&fit=crop">
 
-<div class="about-text">
-
-<h2>About Us</h2>
-
+<div class="product-content">
+<h3>Screening Plants</h3>
 <p>
-AL JABRI PROJECTS is a specialized industrial company focused on crushing,
-screening and heavy industrial engineering solutions.
-
-We deliver high quality systems, maintenance services,
-industrial fabrication and spare parts solutions with reliable engineering standards.
+High-efficiency vibrating screens and material separation systems for industrial applications.
 </p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=2070&auto=format&fit=crop">
+
+<div class="product-content">
+<h3>Cone Crusher</h3>
+<p>
+Secondary and tertiary crushing systems optimized for high-capacity quarry production.
+</p>
+</div>
+</div>
+
+<div class="product-card">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2070&auto=format&fit=crop">
+
+<div class="product-content">
+<h3>Industrial Production Lines</h3>
+<p>
+Complete industrial production line engineering for recycling, quarry and manufacturing industries.
+</p>
+</div>
+</div>
 
 </div>
 
 </section>
 
-<section class="section contact" id="contact">
+<section class="quote">
+
+<h2>
+"Together we can unlock the full potential of your quarry with advanced <span>industrial production solutions</span>."
+</h2>
+
+</section>
+
+<section class="section" id="team">
+
+<h2 class="section-title">Management Team</h2>
+
+<p class="section-desc">
+Leadership driven by industrial expertise, innovation and long-term vision.
+</p>
+
+<div class="team">
+
+<div class="team-card">
+<h3>Mohamad Al Jabri</h3>
+<p>Owner & Founder</p>
+</div>
+
+<div class="team-card">
+<h3>Ahmad Al Jabri</h3>
+<p>General Manager</p>
+</div>
+
+<div class="team-card">
+<h3>Mohamad Sharaf</h3>
+<p>Public Relations Manager</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
 
 <h2 class="section-title">Contact Us</h2>
 
-<p>Email: info@aljabri.co</p>
+<div class="contact-grid">
 
-<p>Oman - Sohar</p>
+<div class="contact-box">
+<h3>Oman Office</h3>
 
-<a href="https://wa.me/" class="btn">WhatsApp</a>
+<p>Al Suwari Complex - Sohar - Oman</p>
+<p>Industrial Area - Al Ohi - Sohar - Oman</p>
+<p>info@aljabri.co</p>
+<p>+968 9275 7720</p>
+<p>+968 92243919</p>
+
+</div>
+
+<div class="contact-box">
+<h3>UAE Office</h3>
+
+<p>Sharjah - United Arab Emirates</p>
+<p>+968 71704621</p>
+<p>+968 96076337</p>
+<p>infoaljabri2022@gmail.com</p>
+<p>www.aljabri.co</p>
+
+</div>
+
+</div>
 
 </section>
 
 <footer>
 
-© 2026 AL JABRI PROJECTS — All Rights Reserved
+© 2026 AL JABRI PROJECTS — ALL RIGHTS RESERVED
 
 </footer>
 
+<a class="whatsapp" href="https://wa.me/96892757720" target="_blank">
+☎
+</a>
+
 </body>
 </html>
+```
+
+بعد نسخ الكود:
+
+1. احذف الكود القديم داخل index.html
+2. الصق الكود الجديد
+3. اضغط Commit Changes
+4. انتظر دقيقة
+5. افتح موقعك
