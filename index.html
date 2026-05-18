@@ -1,307 +1,470 @@
-export default function AlJabriHomepage2026() {
-  const products = [
-    {
-      title: 'Jaw Crushers',
-      desc: 'Heavy-duty crushing systems engineered for industrial productivity.',
-      image: 'https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop'
-    },
-    {
-      title: 'Cone Crushers',
-      desc: 'Advanced secondary and tertiary crushing solutions.',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop'
-    },
-    {
-      title: 'Screening Plants',
-      desc: 'Precision screening equipment for quarry and mining operations.',
-      image: 'https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=1200&auto=format&fit=crop'
-    },
-    {
-      title: 'Conveyor Systems',
-      desc: 'Reliable conveyor solutions for material transport.',
-      image: 'https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop'
-    }
-  ];
+# ALJABRI PROJECTS — Complete HTML + CSS Page
 
-  const stats = [
-    ['20+', 'Years Experience'],
-    ['250+', 'Permanent Clients'],
-    ['30+', 'Production Lines'],
-    ['10+', 'Operational Sites']
-  ];
+انسخ الكود بالكامل واحفظه باسم:
 
-  return (
-    <div className="bg-black text-white min-h-screen overflow-hidden font-sans">
-      <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/60 border-b border-yellow-500/10">
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-yellow-400"></div>
-            <div>
-              <h1 className="font-black text-2xl tracking-wide text-yellow-400">ALJABRI</h1>
-              <p className="text-xs text-zinc-500 tracking-[3px] uppercase">
-                Industrial Solutions
-              </p>
-            </div>
-          </div>
+```html
+index.html
+```
 
-          <div className="hidden md:flex items-center gap-10 text-sm uppercase tracking-[3px] text-zinc-300">
-            <a href="#home" className="hover:text-yellow-400 transition">Home</a>
-            <a href="#about" className="hover:text-yellow-400 transition">About</a>
-            <a href="#products" className="hover:text-yellow-400 transition">Products</a>
-            <a href="#projects" className="hover:text-yellow-400 transition">Projects</a>
-            <a href="#contact" className="hover:text-yellow-400 transition">Contact</a>
-          </div>
-        </div>
-      </nav>
+ثم ضع الصور بنفس المجلد بالأسماء التالية:
 
-      <section
-        id="home"
-        className="relative min-h-screen flex items-center justify-center"
-      >
-        <img
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop"
-          className="absolute inset-0 w-full h-full object-cover opacity-20"
-          alt="hero"
-        />
+* [https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop](https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop)
+* [https://i.imgur.com/xnC8LwT.png](https://i.imgur.com/xnC8LwT.png)
+* [https://i.imgur.com/yR4f8hN.png](https://i.imgur.com/yR4f8hN.png)
+* [https://i.imgur.com/8g8KQ6A.png](https://i.imgur.com/8g8KQ6A.png)
+* [https://i.imgur.com/rxYl8lK.png](https://i.imgur.com/rxYl8lK.png)
+* [https://i.imgur.com/7z0vF4Y.png](https://i.imgur.com/7z0vF4Y.png)
+* [https://i.imgur.com/oM9wK8k.png](https://i.imgur.com/oM9wK8k.png)
+* [https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop](https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop)
+* [https://i.imgur.com/2wY7G7K.png](https://i.imgur.com/2wY7G7K.png)
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/70 to-black"></div>
+الكود الكامل:
 
-        <div className="relative z-10 text-center px-6 max-w-6xl">
-          <div className="inline-flex items-center gap-4 bg-yellow-400/10 border border-yellow-400/20 px-8 py-4 rounded-full mb-10">
-            <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
-            <span className="uppercase tracking-[4px] text-yellow-400 text-sm">
-              Industrial Innovation Since 2006
-            </span>
-          </div>
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALJABRI PROJECTS</title>
 
-          <h1 className="text-6xl md:text-8xl lg:text-[140px] font-black leading-none text-yellow-400 drop-shadow-[0_0_30px_rgba(255,215,0,0.4)]">
-            ALJABRI
-          </h1>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
 
-          <h2 className="mt-8 text-2xl md:text-5xl font-light text-zinc-100 leading-tight">
-            Crushing & Screening
-            <br />
-            Production Solutions
-          </h2>
+<style>
 
-          <p className="max-w-4xl mx-auto mt-10 text-zinc-400 leading-9 text-lg md:text-xl">
-            Complete quarry, crusher and industrial production systems engineered
-            for maximum efficiency, durability and operational performance.
-          </p>
-
-          <div className="mt-14 flex flex-wrap justify-center gap-6">
-            <button className="bg-yellow-400 text-black px-10 py-5 rounded-2xl font-black text-lg hover:scale-105 transition duration-300 shadow-[0_0_40px_rgba(250,204,21,0.3)]">
-              Explore Products
-            </button>
-
-            <button className="border border-yellow-400 text-yellow-400 px-10 py-5 rounded-2xl font-black text-lg hover:bg-yellow-400 hover:text-black transition duration-300">
-              Contact Company
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-24 border-y border-zinc-800 bg-[#0b0b0b]">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {stats.map((item, index) => (
-            <div
-              key={index}
-              className="bg-black border border-zinc-800 rounded-[30px] p-10 text-center hover:border-yellow-400 transition duration-300"
-            >
-              <h3 className="text-5xl md:text-6xl font-black text-yellow-400">
-                {item[0]}
-              </h3>
-
-              <p className="mt-4 text-zinc-400 tracking-wide uppercase text-sm">
-                {item[1]}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section id="about" className="py-32 px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
-          <div>
-            <div className="uppercase tracking-[6px] text-yellow-400 text-sm mb-6">
-              About Company
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-black leading-tight mb-10">
-              Industrial Engineering Built For Performance
-            </h2>
-
-            <div className="w-40 h-1 bg-yellow-400 mb-10"></div>
-
-            <p className="text-zinc-400 leading-9 text-lg mb-8">
-              ALJABRI specializes in crushing systems, screening plants,
-              industrial production lines and heavy-duty quarry equipment.
-            </p>
-
-            <p className="text-zinc-500 leading-9 text-lg mb-12">
-              We provide manufacturing, installation, maintenance and operational
-              support across Oman, UAE and GCC markets.
-            </p>
-
-            <div className="grid grid-cols-2 gap-6">
-              <div className="bg-[#0d0d0d] border border-zinc-800 rounded-3xl p-8">
-                <div className="text-yellow-400 text-4xl font-black">24/7</div>
-                <div className="mt-3 text-zinc-400">Technical Support</div>
-              </div>
-
-              <div className="bg-[#0d0d0d] border border-zinc-800 rounded-3xl p-8">
-                <div className="text-yellow-400 text-4xl font-black">100%</div>
-                <div className="mt-3 text-zinc-400">Industrial Quality</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=1400&auto=format&fit=crop"
-              className="rounded-[40px] border border-yellow-400/20 shadow-2xl"
-              alt="about"
-            />
-
-            <div className="absolute -bottom-8 -left-8 bg-yellow-400 text-black rounded-[30px] p-8 shadow-[0_0_50px_rgba(250,204,21,0.4)]">
-              <div className="text-5xl font-black">20+</div>
-              <div className="mt-2 font-bold uppercase tracking-wide text-sm">
-                Years Experience
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="products" className="py-32 bg-[#0b0b0b] px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="uppercase tracking-[6px] text-yellow-400 text-sm mb-6">
-              Product Categories
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-black">
-              Industrial Equipment
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10">
-            {products.map((product, index) => (
-              <div
-                key={index}
-                className="group bg-black border border-zinc-800 rounded-[36px] overflow-hidden hover:border-yellow-400 transition duration-500 hover:-translate-y-3"
-              >
-                <div className="overflow-hidden h-[320px]">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
-                  />
-                </div>
-
-                <div className="p-8">
-                  <h3 className="text-3xl font-black text-yellow-400 mb-5">
-                    {product.title}
-                  </h3>
-
-                  <p className="text-zinc-400 leading-8 mb-8">
-                    {product.desc}
-                  </p>
-
-                  <button className="w-full border border-yellow-400 text-yellow-400 py-4 rounded-2xl font-black hover:bg-yellow-400 hover:text-black transition duration-300">
-                    View Details
-                  </button>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="py-32 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <div className="uppercase tracking-[6px] text-yellow-400 text-sm mb-6">
-              Company Projects
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-black">
-              Production Facilities
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              'https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200&auto=format&fit=crop',
-              'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?q=80&w=1200&auto=format&fit=crop'
-            ].map((img, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-[36px] border border-zinc-800 hover:border-yellow-400 transition duration-500"
-              >
-                <img
-                  src={img}
-                  className="w-full h-[450px] object-cover hover:scale-110 transition duration-700"
-                  alt="project"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" className="py-32 bg-[#0b0b0b] px-6">
-        <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <div className="uppercase tracking-[6px] text-yellow-400 text-sm mb-6">
-              Contact Information
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-black mb-10">
-              Let's Work Together
-            </h2>
-
-            <div className="space-y-6 text-zinc-400 text-xl leading-9">
-              <p>📞 +968 9275 7720</p>
-              <p>📞 +968 9224 3919</p>
-              <p>✉ info@aljabri.co</p>
-              <p>🌐 www.aljabri.co</p>
-              <p>📍 Sohar - Sultanate of Oman</p>
-              <p>📍 Sharjah - United Arab Emirates</p>
-            </div>
-          </div>
-
-          <div className="bg-black border border-zinc-800 rounded-[36px] p-10 shadow-2xl">
-            <div className="space-y-6">
-              <input
-                type="text"
-                placeholder="Your Name"
-                className="w-full p-5 rounded-2xl bg-zinc-950 border border-zinc-800 focus:border-yellow-400 outline-none"
-              />
-
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="w-full p-5 rounded-2xl bg-zinc-950 border border-zinc-800 focus:border-yellow-400 outline-none"
-              />
-
-              <textarea
-                rows="6"
-                placeholder="Your Message"
-                className="w-full p-5 rounded-2xl bg-zinc-950 border border-zinc-800 focus:border-yellow-400 outline-none"
-              ></textarea>
-
-              <button className="w-full bg-yellow-400 text-black py-5 rounded-2xl font-black text-lg hover:scale-105 transition duration-300 shadow-[0_0_40px_rgba(250,204,21,0.3)]">
-                Send Message
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer className="py-10 border-t border-zinc-800 text-center text-zinc-500 text-sm tracking-[3px] uppercase">
-        © 2026 ALJABRI INDUSTRIAL SOLUTIONS — ALL RIGHTS RESERVED
-      </footer>
-    </div>
-  );
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
+
+body{
+    font-family:'Cairo',sans-serif;
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+.hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:'';
+    position:absolute;
+    inset:0;
+    background:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+    filter:brightness(0.35);
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    padding:20px;
+}
+
+.logo{
+    width:220px;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:85px;
+    line-height:1;
+    font-weight:900;
+    color:#ffd000;
+    text-shadow:0 0 30px rgba(255,208,0,0.5);
+}
+
+.hero h2{
+    font-size:42px;
+    margin-top:15px;
+    color:white;
+    font-weight:800;
+}
+
+.hero p{
+    max-width:900px;
+    margin:30px auto;
+    font-size:22px;
+    line-height:2;
+    color:#dddddd;
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:#ffd000;
+    color:black;
+    text-decoration:none;
+    font-weight:900;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #ffd000;
+}
+
+.section-title{
+    text-align:center;
+    font-size:55px;
+    margin-bottom:70px;
+    color:#ffd000;
+    font-weight:900;
+}
+
+.products{
+    padding:100px 8%;
+    background:#111;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:35px;
+}
+
+.card{
+    background:#1a1a1a;
+    border:1px solid #333;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,208,0,0.3);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:#fff;
+    padding:20px;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card h3{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#ffd000;
+}
+
+.card p{
+    line-height:2;
+    color:#d8d8d8;
+    font-size:17px;
+}
+
+.about{
+    padding:120px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+    background:#0d0d0d;
+}
+
+.about img{
+    width:100%;
+    border-radius:20px;
+}
+
+.about-content h2{
+    font-size:60px;
+    color:#ffd000;
+    margin-bottom:30px;
+}
+
+.about-content p{
+    font-size:20px;
+    line-height:2.2;
+    color:#dddddd;
+}
+
+.services{
+    padding:120px 8%;
+    background:#121212;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.service-box{
+    background:#1c1c1c;
+    padding:40px 30px;
+    border-radius:20px;
+    text-align:center;
+    border:1px solid #333;
+}
+
+.service-box h3{
+    color:#ffd000;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.service-box p{
+    color:#ddd;
+    line-height:2;
+}
+
+.contact{
+    padding:120px 8%;
+    background:#0a0a0a;
+    text-align:center;
+}
+
+.contact-box{
+    max-width:900px;
+    margin:auto;
+    background:#1a1a1a;
+    border-radius:25px;
+    padding:60px;
+    border:2px solid #ffd000;
+}
+
+.contact-box h2{
+    font-size:55px;
+    color:#ffd000;
+    margin-bottom:40px;
+}
+
+.contact-info{
+    font-size:24px;
+    line-height:2.5;
+    color:#f2f2f2;
+}
+
+.footer{
+    padding:30px;
+    text-align:center;
+    background:black;
+    color:#888;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero h2{
+    font-size:28px;
+}
+
+.about{
+    grid-template-columns:1fr;
+}
+
+.about-content h2{
+    font-size:40px;
+}
+
+.section-title{
+    font-size:40px;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <img src="https://i.imgur.com/2wY7G7K.png" class="logo">
+
+        <h1>ALJABRI PROJECTS</h1>
+        <h2>CRUSHING & SCREENING SOLUTIONS</h2>
+
+        <p>
+            Supply, Installation, Maintenance and Spare Parts for Crusher Plants,
+            Quarry Equipment and Industrial Material Handling Systems.
+        </p>
+
+        <a href="#products" class="btn">OUR PRODUCTS</a>
+
+    </div>
+</section>
+
+<section class="products" id="products">
+
+    <h2 class="section-title">OUR PRODUCTS</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <img src="https://i.imgur.com/xnC8LwT.png">
+            <div class="card-content">
+                <h3>JAW CRUSHER</h3>
+                <p>
+                    Heavy duty primary crusher designed for crushing hard stones,
+                    granite and mining materials with high efficiency.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/yR4f8hN.png">
+            <div class="card-content">
+                <h3>CONE CRUSHER</h3>
+                <p>
+                    High performance secondary and tertiary crushing solutions
+                    for aggregate production and mining industries.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/8g8KQ6A.png">
+            <div class="card-content">
+                <h3>IMPACT CRUSHER</h3>
+                <p>
+                    Efficient impact crushing technology delivering superior
+                    particle shape and reduced operating costs.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/rxYl8lK.png">
+            <div class="card-content">
+                <h3>VSI MACHINE</h3>
+                <p>
+                    Vertical shaft impact crushers ideal for manufactured sand,
+                    shaping aggregates and recycling applications.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/7z0vF4Y.png">
+            <div class="card-content">
+                <h3>VIBRATING SCREENS</h3>
+                <p>
+                    Accurate screening systems for separating materials into
+                    multiple sizes with maximum efficiency.
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://i.imgur.com/oM9wK8k.png">
+            <div class="card-content">
+                <h3>CONVEYOR BELTS</h3>
+                <p>
+                    Industrial conveyor systems for transporting aggregate,
+                    mining and construction materials safely.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="about">
+
+    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=1200&auto=format&fit=crop">
+
+    <div class="about-content">
+        <h2>QUARRY MANAGEMENT</h2>
+
+        <p>
+            ALJABRI PROJECTS provides complete quarry management and crushing
+            plant solutions including extraction, crushing, screening,
+            maintenance and production optimization.
+            
+            We focus on increasing productivity, reducing operating costs and
+            delivering reliable industrial solutions for mining and construction sectors.
+        </p>
+    </div>
+
+</section>
+
+<section class="services">
+
+    <h2 class="section-title">OUR SERVICES</h2>
+
+    <div class="service-grid">
+
+        <div class="service-box">
+            <h3>SUPPLY</h3>
+            <p>
+                Crusher machines, spare parts and industrial equipment.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>INSTALLATION</h3>
+            <p>
+                Professional installation and commissioning for crusher plants.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>MAINTENANCE</h3>
+            <p>
+                Preventive and corrective maintenance services.
+            </p>
+        </div>
+
+        <div class="service-box">
+            <h3>SPARE PARTS</h3>
+            <p>
+                High quality crusher wear parts and industrial accessories.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="contact">
+
+    <div class="contact-box">
+
+        <h2>CONTACT US</h2>
+
+        <div class="contact-info">
+            <p>📞 +968 9224 3919</p>
+            <p>📞 +968 9275 7720</p>
+            <p>📞 +968 7170 4621</p>
+            <p>📞 +968 9607 6337</p>
+            <p>✉ info@aljabri.co</p>
+            <p>🌐 www.aljabri.co</p>
+            <p>📍 Sohar - Sultanate of Oman</p>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="footer">
+    © 2026 ALJABRI PROJECTS — ALL RIGHTS RESERVED
+</div>
+
+</body>
+</html>
+```
