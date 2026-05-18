@@ -3,992 +3,219 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALJABRI PROJECTS - Industrial Crushing & Screening Solutions in Oman</title>
-<meta name="description" content="ALJABRI PROJECTS - Premium crushing and screening solutions. Supply, installation, maintenance & spare parts for crusher plants in Sohar, Oman.">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<title>ALJABRI Industrial Solutions</title>
 
 <style>
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-:root {
-    --primary-gold: #ffd000;
-    --primary-dark: #0a0a0a;
-    --secondary-dark: #1a1a1a;
-    --text-light: #e8e8e8;
-    --text-gray: #a0a0a0;
-    --accent-blue: #0066cc;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
 }
 
 body{
-    font-family:'Poppins', sans-serif;
-    background:#0a0a0a;
-    color:var(--text-light);
-    overflow-x:hidden;
-    line-height:1.6;
+background:#000;
+color:white;
+overflow-x:hidden;
 }
 
-html{
-    scroll-behavior:smooth;
+header{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2000&auto=format&fit=crop') center/cover;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
 }
 
-/* NAVBAR */
-nav {
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(10,10,10,0.95);
-    backdrop-filter:blur(10px);
-    z-index:1000;
-    border-bottom:2px solid var(--primary-gold);
-    padding:15px 0;
-    box-shadow:0 2px 20px rgba(0,0,0,0.5);
+header::before{
+content:'';
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.7);
 }
 
-.navbar-container {
-    max-width:1400px;
-    margin:0 auto;
-    padding:0 40px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo-brand {
-    font-size:24px;
-    font-weight:900;
-    color:var(--primary-gold);
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.nav-links {
-    display:flex;
-    list-style:none;
-    gap:40px;
-}
-
-.nav-links a {
-    color:var(--text-light);
-    text-decoration:none;
-    font-weight:600;
-    transition:0.3s;
-    text-transform:uppercase;
-    font-size:12px;
-    letter-spacing:1px;
-}
-
-.nav-links a:hover {
-    color:var(--primary-gold);
-    text-shadow:0 0 10px rgba(255,208,0,0.5);
-}
-
-/* HERO SECTION */
 .hero{
-    position:relative;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    overflow:hidden;
-    margin-top:60px;
-}
-
-.hero::before{
-    content:'';
-    position:absolute;
-    inset:0;
-    background:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
-    filter:brightness(0.25) contrast(1.1);
-    z-index:-1;
-}
-
-.hero::after {
-    content:'';
-    position:absolute;
-    inset:0;
-    background:radial-gradient(circle at center, rgba(255,208,0,0.1) 0%, rgba(0,0,0,0.8) 100%);
-    z-index:0;
-}
-
-.hero-content{
-    position:relative;
-    z-index:2;
-    padding:40px 20px;
-    max-width:1000px;
-}
-
-.hero-badge {
-    display:inline-block;
-    background:rgba(255,208,0,0.15);
-    border:2px solid var(--primary-gold);
-    padding:12px 30px;
-    border-radius:50px;
-    margin-bottom:30px;
-    font-weight:700;
-    font-size:14px;
-    color:var(--primary-gold);
-    text-transform:uppercase;
-    letter-spacing:1px;
+position:relative;
+z-index:2;
 }
 
 .hero h1{
-    font-size:90px;
-    line-height:1;
-    font-weight:900;
-    color:var(--primary-gold);
-    text-shadow:0 0 40px rgba(255,208,0,0.8), 0 0 80px rgba(255,208,0,0.4);
-    margin-bottom:20px;
-    letter-spacing:3px;
-    font-family:'Roboto Condensed', sans-serif;
-    text-transform:uppercase;
+font-size:120px;
+color:#facc15;
+font-weight:900;
 }
 
-.hero h2{
-    font-size:48px;
-    margin-bottom:30px;
-    color:var(--text-light);
-    font-weight:300;
-    letter-spacing:2px;
+.hero p{
+margin-top:20px;
+font-size:24px;
+color:#ddd;
 }
 
-.hero-description {
-    font-size:20px;
-    max-width:800px;
-    margin:30px auto;
-    color:var(--text-light);
-    line-height:1.8;
-    font-weight:400;
+.btn{
+display:inline-block;
+margin-top:40px;
+padding:18px 40px;
+background:#facc15;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:12px;
 }
 
-.cta-buttons {
-    display:flex;
-    gap:20px;
-    justify-content:center;
-    margin-top:50px;
-    flex-wrap:wrap;
+section{
+padding:100px 8%;
 }
 
-.btn-primary, .btn-secondary {
-    display:inline-block;
-    padding:18px 45px;
-    text-decoration:none;
-    font-weight:700;
-    border-radius:5px;
-    transition:all 0.3s;
-    text-transform:uppercase;
-    font-size:14px;
-    letter-spacing:1.5px;
-    border:2px solid transparent;
-    cursor:pointer;
+.title{
+font-size:60px;
+margin-bottom:50px;
+color:#facc15;
+text-align:center;
 }
 
-.btn-primary{
-    background:linear-gradient(135deg, var(--primary-gold) 0%, #ffed4e 100%);
-    color:#000;
-    box-shadow:0 10px 30px rgba(255,208,0,0.4);
-}
-
-.btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 15px 50px rgba(255,208,0,0.6);
-}
-
-.btn-secondary {
-    background:transparent;
-    border:2px solid var(--primary-gold);
-    color:var(--primary-gold);
-}
-
-.btn-secondary:hover {
-    background:var(--primary-gold);
-    color:#000;
-}
-
-/* SECTION STYLES */
-section {
-    padding:100px 40px;
-    max-width:1400px;
-    margin:0 auto;
-}
-
-.section-header {
-    text-align:center;
-    margin-bottom:80px;
-}
-
-.section-header .badge {
-    display:inline-block;
-    background:rgba(255,208,0,0.1);
-    border:1px solid var(--primary-gold);
-    padding:8px 20px;
-    border-radius:20px;
-    font-size:12px;
-    color:var(--primary-gold);
-    margin-bottom:20px;
-    text-transform:uppercase;
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-.section-title{
-    text-align:center;
-    font-size:60px;
-    margin-bottom:20px;
-    color:var(--primary-gold);
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-family:'Roboto Condensed', sans-serif;
-}
-
-.section-subtitle {
-    text-align:center;
-    font-size:18px;
-    color:var(--text-gray);
-    max-width:600px;
-    margin:0 auto 50px;
-    line-height:1.8;
-}
-
-/* PRODUCTS SECTION */
 .products{
-    background:linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
 }
 
-.products-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:40px;
-    margin-top:60px;
+.card{
+background:#111;
+border:1px solid #222;
+border-radius:25px;
+overflow:hidden;
+transition:0.3s;
 }
 
-.product-card{
-    background:var(--secondary-dark);
-    border:2px solid transparent;
-    border-radius:15px;
-    overflow:hidden;
-    transition:all 0.4s;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5);
-    position:relative;
+.card:hover{
+transform:translateY(-10px);
+border-color:#facc15;
 }
 
-.product-card::before {
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    right:0;
-    height:4px;
-    background:linear-gradient(90deg, var(--primary-gold) 0%, transparent 100%);
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
 }
 
-.product-card:hover{
-    transform:translateY(-15px);
-    border-color:var(--primary-gold);
-    box-shadow:0 20px 50px rgba(255,208,0,0.3);
+.card-content{
+padding:25px;
 }
 
-.product-image{
-    width:100%;
-    height:300px;
-    background:linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
-    position:relative;
+.card-content h3{
+color:#facc15;
+margin-bottom:15px;
+font-size:30px;
 }
 
-.product-image img{
-    width:100%;
-    height:100%;
-    object-fit:contain;
-    padding:20px;
-    transition:0.3s;
-}
-
-.product-card:hover .product-image img {
-    transform:scale(1.1);
-}
-
-.product-content{
-    padding:30px;
-}
-
-.product-icon {
-    font-size:40px;
-    margin-bottom:15px;
-    color:var(--primary-gold);
-}
-
-.product-card h3{
-    font-size:24px;
-    margin-bottom:15px;
-    color:var(--primary-gold);
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.product-card p{
-    color:var(--text-gray);
-    font-size:14px;
-    line-height:1.8;
-}
-
-/* SERVICES SECTION */
-.services{
-    background:var(--primary-dark);
-}
-
-.services-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:35px;
-    margin-top:60px;
-}
-
-.service-card{
-    background:var(--secondary-dark);
-    padding:50px 30px;
-    border-radius:15px;
-    text-align:center;
-    border:2px solid var(--secondary-dark);
-    transition:all 0.3s;
-    box-shadow:0 10px 30px rgba(0,0,0,0.5);
-}
-
-.service-card:hover {
-    border-color:var(--primary-gold);
-    transform:translateY(-10px);
-    box-shadow:0 20px 50px rgba(255,208,0,0.2);
-}
-
-.service-icon {
-    font-size:60px;
-    margin-bottom:20px;
-    color:var(--primary-gold);
-}
-
-.service-card h3{
-    color:var(--primary-gold);
-    margin-bottom:20px;
-    font-size:26px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.service-card p{
-    color:var(--text-gray);
-    font-size:15px;
-    line-height:1.8;
-}
-
-/* STATS SECTION */
-.stats {
-    background:linear-gradient(135deg, var(--primary-gold) 0%, #ffed4e 100%);
-    color:#000;
-    padding:80px 40px;
-}
-
-.stats-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
-    gap:50px;
-    margin-top:50px;
-}
-
-.stat-item {
-    text-align:center;
-}
-
-.stat-number {
-    font-size:60px;
-    font-weight:900;
-    margin-bottom:10px;
-    font-family:'Roboto Condensed', sans-serif;
-}
-
-.stat-label {
-    font-size:18px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-/* ABOUT SECTION */
-.about{
-    background:linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:80px;
-    align-items:center;
-}
-
-.about-image {
-    position:relative;
-}
-
-.about img{
-    width:100%;
-    border-radius:10px;
-    border:3px solid var(--primary-gold);
-    box-shadow:0 20px 60px rgba(255,208,0,0.2);
-}
-
-.about-image::before {
-    content:'';
-    position:absolute;
-    top:-20px;
-    left:-20px;
-    width:100%;
-    height:100%;
-    border:2px solid var(--primary-gold);
-    border-radius:10px;
-    opacity:0.5;
-}
-
-.about-content h2{
-    font-size:50px;
-    color:var(--primary-gold);
-    margin-bottom:30px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-family:'Roboto Condensed', sans-serif;
-}
-
-.about-content p{
-    font-size:16px;
-    line-height:2;
-    color:var(--text-light);
-    margin-bottom:25px;
-}
-
-.about-features {
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    margin-top:30px;
-}
-
-.feature-item {
-    display:flex;
-    align-items:center;
-    gap:15px;
-    font-size:16px;
-    font-weight:600;
-}
-
-.feature-item i {
-    color:var(--primary-gold);
-    font-size:24px;
-}
-
-/* CONTACT SECTION */
 .contact{
-    background:var(--primary-dark);
-    text-align:center;
+text-align:center;
 }
 
-.contact-box{
-    max-width:1100px;
-    margin:0 auto;
-    background:linear-gradient(135deg, var(--secondary-dark) 0%, #0d0d0d 100%);
-    border-radius:15px;
-    padding:80px 60px;
-    border:3px solid var(--primary-gold);
-    box-shadow:0 30px 80px rgba(255,208,0,0.2);
+.contact p{
+margin:15px 0;
+font-size:22px;
+color:#ccc;
 }
 
-.contact-box h2{
-    font-size:50px;
-    color:var(--primary-gold);
-    margin-bottom:60px;
-    font-weight:800;
-    text-transform:uppercase;
-    letter-spacing:2px;
-    font-family:'Roboto Condensed', sans-serif;
-}
-
-.contact-grid {
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
-    gap:40px;
-}
-
-.contact-item{
-    background:rgba(255,208,0,0.05);
-    padding:40px 30px;
-    border-radius:10px;
-    border-left:4px solid var(--primary-gold);
-}
-
-.contact-item h4{
-    color:var(--primary-gold);
-    margin-bottom:20px;
-    font-size:20px;
-    font-weight:700;
-    text-transform:uppercase;
-    letter-spacing:1px;
-}
-
-.contact-item p{
-    color:var(--text-light);
-    font-size:16px;
-    line-height:2;
-}
-
-.contact-item a {
-    color:var(--primary-gold);
-    text-decoration:none;
-    font-weight:600;
-}
-
-.contact-item a:hover {
-    text-decoration:underline;
-}
-
-/* FOOTER */
-.footer{
-    padding:40px;
-    text-align:center;
-    background:#000;
-    color:var(--text-gray);
-    border-top:2px solid var(--primary-gold);
-}
-
-.footer-content {
-    max-width:1400px;
-    margin:0 auto;
-}
-
-.footer-links {
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-bottom:20px;
-    flex-wrap:wrap;
-}
-
-.footer-links a {
-    color:var(--primary-gold);
-    text-decoration:none;
-    font-weight:600;
-    font-size:14px;
-}
-
-.footer-links a:hover {
-    text-decoration:underline;
-}
-
-.footer p {
-    font-weight:700;
-    letter-spacing:1px;
-}
-
-/* SCROLL ANIMATION */
-@keyframes slideInUp {
-    from {
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to {
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-.fade-in {
-    animation:slideInUp 0.6s ease-out;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-
-nav {
-    padding:10px 0;
-}
-
-.navbar-container {
-    padding:0 20px;
-}
-
-.logo-brand {
-    font-size:18px;
-}
-
-.nav-links {
-    gap:20px;
-    font-size:11px;
-}
-
-.hero h1{
-    font-size:50px;
-}
-
-.hero h2{
-    font-size:28px;
-}
-
-.hero-description {
-    font-size:16px;
-}
-
-section {
-    padding:60px 20px;
-}
-
-.section-title {
-    font-size:40px;
-}
-
-.products-grid,
-.services-grid {
-    grid-template-columns:1fr;
-    gap:30px;
-}
-
-.about {
-    grid-template-columns:1fr;
-    gap:40px;
-}
-
-.contact-box {
-    padding:40px 20px;
-}
-
-.cta-buttons {
-    flex-direction:column;
-}
-
-.btn-primary, .btn-secondary {
-    width:100%;
-}
-
+footer{
+padding:40px;
+text-align:center;
+border-top:1px solid #222;
+color:#777;
 }
 
 </style>
+
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav>
-    <div class="navbar-container">
-        <div class="logo-brand">
-            <i class="fas fa-cog"></i> ALJABRI PROJECTS
-        </div>
-        <ul class="nav-links">
-            <li><a href="#products">Products</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
+<header>
 
-<!-- HERO SECTION -->
-<section class="hero">
-    <div class="hero-content">
-        <div class="hero-badge">
-            <i class="fas fa-award"></i> Premium Industrial Solutions
-        </div>
+<div class="hero">
 
-        <h1>ALJABRI PROJECTS</h1>
-        <h2>Crushing & Screening Excellence</h2>
+<h1>ALJABRI</h1>
 
-        <p class="hero-description">
-            Complete crushing and screening solutions for mining, construction, and industrial applications. 
-            Supply • Installation • Maintenance • Spare Parts
-        </p>
+<p>Industrial Crushing & Screening Solutions</p>
 
-        <div class="cta-buttons">
-            <a href="#products" class="btn-primary">
-                <i class="fas fa-arrow-right"></i> Explore Products
-            </a>
-            <a href="#contact" class="btn-secondary">
-                Get in Touch
-            </a>
-        </div>
-    </div>
+<a href="#products" class="btn">Explore Products</a>
+
+</div>
+
+</header>
+
+<section id="products">
+
+<h2 class="title">Our Products</h2>
+
+<div class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Jaw Crusher</h3>
+
+<p>Heavy duty jaw crushers engineered for industrial production lines.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Cone Crusher</h3>
+
+<p>Advanced cone crushers for secondary and tertiary crushing.</p>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=1200&auto=format&fit=crop">
+
+<div class="card-content">
+
+<h3>Vibrating Screen</h3>
+
+<p>Industrial screening systems for quarry and mining plants.</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
-<!-- PRODUCTS SECTION -->
-<section class="products" id="products">
-    <div class="section-header">
-        <div class="badge"><i class="fas fa-cube"></i> Product Line</div>
-        <h2 class="section-title">Industrial Crushing Equipment</h2>
-        <p class="section-subtitle">Premium quality crushing and screening machinery for maximum productivity</p>
-    </div>
+<section class="contact">
 
-    <div class="products-grid">
+<h2 class="title">Contact Us</h2>
 
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="Jaw Crusher">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-hammer"></i></div>
-                <h3>JAW CRUSHER</h3>
-                <p>Heavy-duty primary crushing for hard stones, granite, and mining materials. Engineered for maximum efficiency and reliability.</p>
-            </div>
-        </div>
+<p>+968 9275 7720</p>
 
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581092160562-40fed08122bc?q=80&w=800&auto=format&fit=crop" alt="Cone Crusher">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-cog"></i></div>
-                <h3>CONE CRUSHER</h3>
-                <p>High-performance secondary and tertiary crushing for aggregate production and mining industries.</p>
-            </div>
-        </div>
+<p>info@aljabri.co</p>
 
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1587826080693-fd6dc902e4ca?q=80&w=800&auto=format&fit=crop" alt="Impact Crusher">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-bolt"></i></div>
-                <h3>IMPACT CRUSHER</h3>
-                <p>Efficient impact crushing technology delivering superior particle shape and reduced operating costs.</p>
-            </div>
-        </div>
+<p>Sohar - Sultanate of Oman</p>
 
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581092163562-40fed08f3e1f?q=80&w=800&auto=format&fit=crop" alt="VSI Machine">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-gears"></i></div>
-                <h3>VSI MACHINE</h3>
-                <p>Vertical shaft impact crushers ideal for manufactured sand, shaping aggregates, and recycling applications.</p>
-            </div>
-        </div>
-
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581092206092-8b9470a6c6c2?q=80&w=800&auto=format&fit=crop" alt="Vibrating Screens">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-layer-group"></i></div>
-                <h3>VIBRATING SCREENS</h3>
-                <p>Precise screening systems for accurate material separation into multiple sizes with maximum efficiency.</p>
-            </div>
-        </div>
-
-        <div class="product-card fade-in">
-            <div class="product-image">
-                <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="Conveyor Systems">
-            </div>
-            <div class="product-content">
-                <div class="product-icon"><i class="fas fa-arrows-alt-h"></i></div>
-                <h3>CONVEYOR SYSTEMS</h3>
-                <p>Industrial conveyor belts for safe transportation of aggregate, mining, and construction materials.</p>
-            </div>
-        </div>
-
-    </div>
 </section>
 
-<!-- STATS SECTION -->
-<section class="stats">
-    <div class="section-header">
-        <h2 style="color:#000; font-size:40px;">Why Choose ALJABRI PROJECTS</h2>
-    </div>
-    <div class="stats-grid">
-        <div class="stat-item">
-            <div class="stat-number">25+</div>
-            <div class="stat-label">Years Experience</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">500+</div>
-            <div class="stat-label">Projects Completed</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">1000+</div>
-            <div class="stat-label">Satisfied Clients</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">24/7</div>
-            <div class="stat-label">Support Available</div>
-        </div>
-    </div>
-</section>
+<footer>
 
-<!-- SERVICES SECTION -->
-<section class="services" id="services">
-    <div class="section-header">
-        <div class="badge"><i class="fas fa-tools"></i> Our Services</div>
-        <h2 class="section-title">Complete Solutions</h2>
-        <p class="section-subtitle">End-to-end services for your crushing and screening needs</p>
-    </div>
+© 2026 ALJABRI Industrial Solutions
 
-    <div class="services-grid">
-
-        <div class="service-card fade-in">
-            <div class="service-icon"><i class="fas fa-truck"></i></div>
-            <h3>SUPPLY</h3>
-            <p>High-quality crusher machines, spare parts, and industrial equipment delivery worldwide.</p>
-        </div>
-
-        <div class="service-card fade-in">
-            <div class="service-icon"><i class="fas fa-tools"></i></div>
-            <h3>INSTALLATION</h3>
-            <p>Professional installation and commissioning for crusher plants with expert technicians.</p>
-        </div>
-
-        <div class="service-card fade-in">
-            <div class="service-icon"><i class="fas fa-wrench"></i></div>
-            <h3>MAINTENANCE</h3>
-            <p>Preventive and corrective maintenance services ensuring optimal plant performance.</p>
-        </div>
-
-        <div class="service-card fade-in">
-            <div class="service-icon"><i class="fas fa-puzzle-piece"></i></div>
-            <h3>SPARE PARTS</h3>
-            <p>Genuine high-quality crusher wear parts and industrial accessories in stock.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-    <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=800&auto=format&fit=crop" alt="Quarry Operations">
-    </div>
-
-    <div class="about-content">
-        <h2>QUARRY MANAGEMENT & SOLUTIONS</h2>
-
-        <p>
-            ALJABRI PROJECTS provides comprehensive quarry management and crushing plant solutions. 
-            With decades of experience in the industry, we deliver excellence in extraction, crushing, 
-            screening, and maintenance.
-        </p>
-
-        <p>
-            Our commitment is to increase productivity, reduce operating costs, and provide 
-            reliable industrial solutions for the mining and construction sectors across Oman and beyond.
-        </p>
-
-        <div class="about-features">
-            <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Built Strong - Engineered for Excellence</span>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Performs Better - Maximum Productivity</span>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Quality You Can Trust - Industry Leaders</span>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-check-circle"></i>
-                <span>Made in Oman - Local Pride</span>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section class="contact" id="contact">
-    <div class="contact-box">
-        <h2><i class="fas fa-envelope"></i> GET IN TOUCH</h2>
-
-        <div class="contact-grid">
-            
-            <div class="contact-item">
-                <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
-                <p>
-                    AL JABRI PROJECTS<br>
-                    Industrial Area, Al Awi<br>
-                    Sohar<br>
-                    Sultanate of Oman<br>
-                    <strong>🇴🇲 Made in Oman</strong>
-                </p>
-            </div>
-
-            <div class="contact-item">
-                <h4><i class="fas fa-phone-alt"></i> Phone Numbers</h4>
-                <p>
-                    <a href="tel:+96892243919">+968 9224 3919</a><br>
-                    <a href="tel:+96892757720">+968 9275 7720</a><br>
-                    <a href="tel:+96871704621">+968 7170 4621</a><br>
-                    <a href="tel:+96896076337">+968 9607 6337</a>
-                </p>
-            </div>
-
-            <div class="contact-item">
-                <h4><i class="fas fa-envelope"></i> Email & Web</h4>
-                <p>
-                    <a href="mailto:info@aljabri.co">✉️ info@aljabri.co</a><br>
-                    <a href="https://www.aljabri.co" target="_blank">🌐 www.aljabri.co</a><br>
-                    <br>
-                    <strong>Available 24/7 for Inquiries</strong>
-                </p>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-links">
-            <a href="#products">Products</a>
-            <a href="#services">Services</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </div>
-        <p>© 2026 ALJABRI PROJECTS — All Rights Reserved | Crushing & Screening Solutions</p>
-    </div>
 </footer>
-
-<script>
-// Smooth scroll behavior for navigation links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    });
-});
-
-// Add fade-in animation on scroll
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -100px 0px'
-};
-
-const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-        }
-    });
-}, observerOptions);
-
-document.querySelectorAll('.product-card, .service-card').forEach(el => {
-    observer.observe(el);
-});
-</script>
 
 </body>
 </html>
