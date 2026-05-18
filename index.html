@@ -1,18 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ALJABRI PROJECTS | Crushing & Screening Solutions</title>
 
-<title>ALJABRI INDUSTRIAL SOLUTIONS</title>
-
-<meta name="description" content="Crusher plant solutions, quarry equipment and industrial systems in Oman and GCC.">
-
-<meta name="keywords" content="Crusher, Quarry, Oman, Conveyor, Screening, Jaw Crusher">
-
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
 
@@ -20,15 +13,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
-
-html{
 scroll-behavior:smooth;
 }
 
 body{
-font-family:'Cairo',sans-serif;
-background:#0b0b0b;
+font-family:'Poppins',sans-serif;
+background:#0b1118;
 color:white;
 overflow-x:hidden;
 }
@@ -38,439 +28,326 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
+background:rgba(0,0,0,0.92);
+backdrop-filter:blur(10px);
+padding:18px 7%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,0.92);
-backdrop-filter:blur(10px);
-z-index:999;
-border-bottom:1px solid rgba(255,208,0,0.15);
+z-index:1000;
+border-bottom:2px solid #f0b400;
 }
 
 .logo{
-font-size:34px;
-font-weight:900;
-color:#ffd000;
+font-family:'Oswald',sans-serif;
+font-size:32px;
+font-weight:700;
+color:#f0b400;
 letter-spacing:2px;
-}
-
-nav{
-display:flex;
-gap:35px;
 }
 
 nav a{
 color:white;
 text-decoration:none;
-font-weight:700;
+margin-left:30px;
+font-weight:500;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#ffd000;
-}
-
-.mobile-btn{
-display:none;
-font-size:34px;
-color:#ffd000;
-cursor:pointer;
-}
-
-.mobile-menu{
-display:none;
-position:fixed;
-top:90px;
-right:-100%;
-width:260px;
-background:#111;
-padding:30px;
-flex-direction:column;
-gap:25px;
-transition:0.4s;
-z-index:999;
-border-left:2px solid #ffd000;
-}
-
-.mobile-menu a{
-color:white;
-text-decoration:none;
-font-size:20px;
-font-weight:700;
-}
-
-.mobile-menu.active{
-right:0;
+color:#f0b400;
 }
 
 .hero{
-position:relative;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
+padding-top:110px;
+background:#000;
 text-align:center;
-overflow:hidden;
 }
 
-.hero-banner{
-position:absolute;
+.hero img{
 width:100%;
-height:100%;
-object-fit:cover;
-top:0;
-left:0;
-opacity:0.35;
-}
-
-.hero::after{
-content:'';
-position:absolute;
-inset:0;
-background:linear-gradient(to bottom, rgba(0,0,0,0.25), rgba(0,0,0,0.94));
+display:block;
 }
 
 .hero-content{
-position:relative;
-z-index:2;
-padding:20px;
-max-width:1100px;
+padding:60px 8%;
+background:linear-gradient(to bottom,#0f1722,#111827);
 }
 
-.hero h1{
-font-size:110px;
-font-weight:900;
-color:#ffd000;
-line-height:1;
-text-shadow:0 0 35px rgba(255,208,0,0.4);
+.hero-content h1{
+font-family:'Oswald',sans-serif;
+font-size:60px;
+line-height:1.1;
+margin-bottom:20px;
+color:#f0b400;
 }
 
-.hero h2{
-font-size:44px;
-margin-top:20px;
-margin-bottom:25px;
-}
-
-.hero p{
-font-size:22px;
-line-height:2;
+.hero-content p{
+font-size:18px;
+max-width:900px;
+margin:auto;
+line-height:1.8;
 color:#ddd;
-margin-bottom:45px;
+}
+
+.buttons{
+margin-top:35px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
 }
 
 .btn{
-display:inline-block;
-padding:18px 40px;
-background:#ffd000;
-color:black;
+padding:16px 35px;
+background:#f0b400;
+color:#000;
+font-weight:700;
 text-decoration:none;
-font-weight:900;
-border-radius:12px;
+border-radius:6px;
 transition:0.3s;
-margin:10px;
 }
 
 .btn:hover{
-transform:translateY(-5px);
-box-shadow:0 0 30px rgba(255,208,0,0.6);
-}
-
-.btn-outline{
-background:transparent;
-border:2px solid #ffd000;
-color:#ffd000;
-}
-
-section{
-padding:120px 8%;
-}
-
-.section-title{
-font-size:58px;
-font-weight:900;
-color:#ffd000;
-text-align:center;
-margin-bottom:70px;
+background:white;
+transform:translateY(-4px);
 }
 
 .stats{
-background:#111;
-}
-
-.stats-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
+gap:25px;
+padding:80px 8%;
+background:#111827;
 }
 
 .stat-box{
-background:#181818;
-padding:45px 25px;
-border-radius:22px;
+background:#1b2431;
+padding:40px 25px;
 text-align:center;
-border:1px solid #2a2a2a;
-transition:0.3s;
+border-radius:14px;
+transition:0.4s;
+border:1px solid rgba(255,255,255,0.05);
 }
 
 .stat-box:hover{
-border-color:#ffd000;
-transform:translateY(-5px);
+transform:translateY(-10px);
+box-shadow:0 15px 35px rgba(240,180,0,0.2);
 }
 
-.stat-box h3{
-font-size:55px;
-color:#ffd000;
-margin-bottom:15px;
+.stat-box h2{
+font-size:42px;
+color:#f0b400;
+margin-bottom:10px;
+font-family:'Oswald',sans-serif;
 }
 
-.products-grid,
-.services-grid,
-.projects-grid{
+.section-title{
+text-align:center;
+padding:80px 20px 50px;
+font-size:50px;
+font-family:'Oswald',sans-serif;
+color:#f0b400;
+}
+
+.products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:35px;
+padding:0 8% 80px;
 }
 
-.card,
-.service-box{
-background:#171717;
-border-radius:22px;
+.card{
+background:#1b2431;
+border-radius:16px;
 overflow:hidden;
-border:1px solid #2a2a2a;
 transition:0.4s;
 }
 
-.card:hover,
-.service-box:hover{
-transform:translateY(-10px);
-border-color:#ffd000;
+.card:hover{
+transform:translateY(-12px);
+box-shadow:0 20px 40px rgba(0,0,0,0.5);
 }
 
 .card img{
 width:100%;
-height:280px;
-object-fit:contain;
-background:white;
-padding:15px;
+height:250px;
+object-fit:cover;
 }
 
-.card-content,
-.service-box{
-padding:28px;
+.card-content{
+padding:25px;
 }
 
-.card h3,
-.service-box h3{
-font-size:30px;
+.card-content h3{
+font-size:28px;
 margin-bottom:15px;
-color:#ffd000;
+color:#f0b400;
+font-family:'Oswald',sans-serif;
 }
 
-.card p,
-.service-box p{
-line-height:2;
-color:#ddd;
-}
-
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:25px;
-border:2px solid #ffd000;
-}
-
-.about h2{
-font-size:55px;
-color:#ffd000;
-margin-bottom:25px;
-}
-
-.about p{
-font-size:20px;
-line-height:2.2;
+.card-content p{
+line-height:1.8;
 color:#ddd;
 margin-bottom:20px;
 }
 
-.project{
-background:#171717;
-border-radius:20px;
-overflow:hidden;
-border:1px solid #2a2a2a;
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+padding:0 8% 80px;
 }
 
-.project img{
-width:100%;
-height:auto;
-display:block;
-}
-
-.project-content{
-padding:25px;
-}
-
-.project-content h3{
-color:#ffd000;
-font-size:28px;
-margin-bottom:12px;
-}
-
-.project-content p{
-line-height:2;
-color:#ddd;
-}
-
-.contact-box{
-max-width:1000px;
-margin:auto;
-background:#171717;
-padding:70px;
-border-radius:30px;
-border:2px solid #ffd000;
+.service{
+background:#1b2431;
+padding:40px 30px;
+border-radius:16px;
+transition:0.4s;
 text-align:center;
 }
 
+.service:hover{
+background:#222f40;
+transform:translateY(-10px);
+}
+
+.service h3{
+color:#f0b400;
+margin-bottom:15px;
+font-size:28px;
+font-family:'Oswald',sans-serif;
+}
+
+.about{
+padding:90px 8%;
+background:#111827;
+text-align:center;
+}
+
+.about p{
+max-width:1000px;
+margin:auto;
+line-height:2;
+font-size:18px;
+color:#ddd;
+margin-top:25px;
+}
+
+.contact{
+padding:90px 8%;
+text-align:center;
+}
+
+.contact-box{
+background:#1b2431;
+padding:50px;
+border-radius:16px;
+max-width:900px;
+margin:auto;
+}
+
 .contact-box h2{
-font-size:55px;
-margin-bottom:40px;
-color:#ffd000;
+font-size:45px;
+margin-bottom:30px;
+color:#f0b400;
+font-family:'Oswald',sans-serif;
 }
 
 .contact-box p{
-font-size:22px;
-line-height:2.4;
-color:#ddd;
+margin:18px 0;
+font-size:20px;
+}
+
+footer{
+background:#000;
+padding:30px;
+text-align:center;
+color:#999;
+font-size:15px;
+border-top:2px solid #f0b400;
 }
 
 .whatsapp{
 position:fixed;
 bottom:25px;
 right:25px;
-width:72px;
-height:72px;
-border-radius:50%;
-background:#25D366;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:34px;
-text-decoration:none;
+background:#25d366;
 color:white;
+width:70px;
+height:70px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+font-size:35px;
+text-decoration:none;
 z-index:999;
-box-shadow:0 0 25px rgba(37,211,102,0.5);
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
 }
 
-footer{
-padding:50px;
-text-align:center;
-background:black;
-color:#777;
-border-top:1px solid #222;
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:40px;
 }
 
-@media(max-width:900px){
+.section-title{
+font-size:38px;
+}
 
 nav{
 display:none;
 }
 
-.mobile-btn{
-display:block;
-}
-
-.mobile-menu{
-display:flex;
-}
-
-.hero h1{
-font-size:58px;
-}
-
-.hero h2{
-font-size:28px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-.about{
-grid-template-columns:1fr;
-}
-
-.section-title{
-font-size:42px;
-}
-
-.about h2{
-font-size:40px;
-}
-
-.contact-box{
-padding:40px 25px;
-}
-
 }
 
 </style>
-
 </head>
 
 <body>
 
 <header>
 
-<div class="logo">ALJABRI</div>
+<div class="logo">
+ALJABRI
+</div>
 
 <nav>
 <a href="#products">Products</a>
 <a href="#services">Services</a>
-<a href="#projects">Projects</a>
+<a href="#about">About</a>
 <a href="#contact">Contact</a>
 </nav>
 
-<div class="mobile-btn" onclick="toggleMenu()">
-☰
-</div>
-
 </header>
-
-<div class="mobile-menu" id="mobileMenu">
-
-<a href="#products" onclick="toggleMenu()">Products</a>
-<a href="#services" onclick="toggleMenu()">Services</a>
-<a href="#projects" onclick="toggleMenu()">Projects</a>
-<a href="#contact" onclick="toggleMenu()">Contact</a>
-
-</div>
 
 <section class="hero">
 
-<img src="banner.jpg" class="hero-banner">
+<img src="https://raw.githubusercontent.com/AlJabriProjects/aljabri-website/main/banner.jpg" alt="ALJABRI PROJECTS">
 
 <div class="hero-content">
 
-<h1>ALJABRI</h1>
-
-<h2>CRUSHING & SCREENING SOLUTIONS</h2>
+<h1>
+CRUSHING & SCREENING SOLUTIONS
+</h1>
 
 <p>
 Complete industrial solutions for crusher plants, quarry operations,
-screening systems, conveyor belts and heavy equipment maintenance.
+screening systems, conveyor belts and heavy equipment maintenance across Oman and GCC countries.
 </p>
 
-<a href="#products" class="btn">Explore Products</a>
+<div class="buttons">
 
-<a href="https://wa.me/96892757720" target="_blank" class="btn btn-outline">
+<a href="#products" class="btn">
+Explore Products
+</a>
+
+<a href="#contact" class="btn">
 Request Quote
 </a>
+
+</div>
 
 </div>
 
@@ -478,142 +355,155 @@ Request Quote
 
 <section class="stats">
 
-<h2 class="section-title">OUR EXPERIENCE</h2>
-
-<div class="stats-grid">
-
 <div class="stat-box">
-<h3>20+</h3>
+<h2>20+</h2>
 <p>Years Experience</p>
 </div>
 
 <div class="stat-box">
-<h3>500+</h3>
+<h2>500+</h2>
 <p>Installations</p>
 </div>
 
 <div class="stat-box">
-<h3>250+</h3>
+<h2>250+</h2>
 <p>Permanent Clients</p>
 </div>
 
 <div class="stat-box">
-<h3>24/7</h3>
+<h2>24/7</h2>
 <p>Technical Support</p>
 </div>
 
-</div>
-
 </section>
 
-<section id="products">
+<h2 class="section-title" id="products">
+OUR PRODUCTS
+</h2>
 
-<h2 class="section-title">OUR PRODUCTS</h2>
-
-<div class="products-grid">
+<section class="products">
 
 <div class="card">
-<img src="https://i.imgur.com/xnC8LwT.png">
+
+<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Jaw Crusher</h3>
-<p>Heavy duty primary crusher for quarry and mining operations.</p>
-<a href="https://wa.me/96892757720" class="btn" target="_blank">Request Quote</a>
+
+<p>
+Heavy duty primary crushing systems designed for quarry and mining operations.
+</p>
+
+<a href="#contact" class="btn">
+Request Quote
+</a>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/yR4f8hN.png">
+
+<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Cone Crusher</h3>
-<p>Advanced crushing solutions for industrial aggregate production.</p>
-<a href="https://wa.me/96892757720" class="btn" target="_blank">Request Quote</a>
+
+<p>
+Advanced crushing solutions engineered for aggregate and industrial production.
+</p>
+
+<a href="#contact" class="btn">
+Request Quote
+</a>
+
 </div>
+
 </div>
 
 <div class="card">
-<img src="https://i.imgur.com/7z0vF4Y.png">
+
+<img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=1200&auto=format&fit=crop">
+
 <div class="card-content">
+
 <h3>Vibrating Screen</h3>
-<p>Industrial screening systems engineered for precise material separation.</p>
-<a href="https://wa.me/96892757720" class="btn" target="_blank">Request Quote</a>
-</div>
+
+<p>
+Industrial screening systems engineered for precise material separation.
+</p>
+
+<a href="#contact" class="btn">
+Request Quote
+</a>
+
 </div>
 
 </div>
 
 </section>
 
-<section id="services">
+<h2 class="section-title" id="services">
+OUR SERVICES
+</h2>
 
-<h2 class="section-title">OUR SERVICES</h2>
+<section class="services">
 
-<div class="services-grid">
-
-<div class="service-box">
+<div class="service">
 <h3>Crusher Engineering</h3>
-<p>Advanced crushing systems inspired by global industrial standards.</p>
+<p>
+Advanced crushing systems inspired by global industrial standards.
+</p>
 </div>
 
-<div class="service-box">
+<div class="service">
 <h3>Quarry Management</h3>
-<p>Production optimization and operational quarry solutions.</p>
+<p>
+Production optimization and operational quarry solutions.
+</p>
 </div>
 
-<div class="service-box">
+<div class="service">
 <h3>Industrial Maintenance</h3>
-<p>Preventive and corrective maintenance for heavy-duty equipment.</p>
+<p>
+Preventive and corrective maintenance for heavy-duty equipment.
+</p>
 </div>
 
-<div class="service-box">
+<div class="service">
 <h3>Spare Parts Supply</h3>
-<p>Complete spare parts solutions for crushers and conveyor systems.</p>
-</div>
-
+<p>
+Complete spare parts solutions for crushers and conveyor systems.
+</p>
 </div>
 
 </section>
 
-<section id="about">
+<section class="about" id="about">
 
-<div class="about">
-
-<img src="banner.jpg">
-
-<div>
-
-<h2>ABOUT ALJABRI</h2>
+<h2 class="section-title">
+ABOUT ALJABRI
+</h2>
 
 <p>
-ALJABRI PROJECTS specializes in crusher systems, quarry equipment,
-industrial production lines and conveyor systems across Oman and GCC.
-</p>
+ALJABRI PROJECTS specializes in crusher systems,
+quarry equipment, industrial production lines and conveyor systems across Oman and GCC.
 
-<p>
 We provide manufacturing, installation, maintenance and operational support
-with focus on industrial quality and reliability.
+with focus on industrial quality, performance and reliability.
 </p>
 
-</div>
-
-</div>
-
 </section>
 
-<section id="projects">
-
-<h2 class="section-title">COMPANY PROFILE</h2>
-
-<div class="project">
-<img src="banner.jpg">
-</div>
-
-</section>
-
-<section id="contact">
+<section class="contact" id="contact">
 
 <div class="contact-box">
 
-<h2>CONTACT US</h2>
+<h2>
+CONTACT US
+</h2>
 
 <p>📞 +968 9275 7720</p>
 <p>📞 +968 9224 3919</p>
@@ -628,28 +518,15 @@ with focus on industrial quality and reliability.
 
 </section>
 
-<a class="whatsapp" href="https://wa.me/96892757720" target="_blank">
-💬
-</a>
-
 <footer>
 
 © 2026 ALJABRI INDUSTRIAL SOLUTIONS — ALL RIGHTS RESERVED
 
 </footer>
 
-<script>
-
-function toggleMenu(){
-
-const menu=document.getElementById('mobileMenu');
-
-menu.classList.toggle('active');
-
-}
-
-</script>
+<a class="whatsapp" href="https://wa.me/96892757720" target="_blank">
+💬
+</a>
 
 </body>
-
 </html>
