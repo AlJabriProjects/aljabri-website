@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>ALJABRI PROJECTS</title>
 
 <style>
@@ -18,6 +21,7 @@ font-family:Arial,sans-serif;
 body{
 background:#0b0f14;
 color:white;
+overflow-x:hidden;
 }
 
 header{
@@ -31,11 +35,11 @@ display:flex;
 justify-content:space-between;
 align-items:center;
 z-index:999;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 .logo{
-font-size:32px;
+font-size:34px;
 font-weight:bold;
 color:#f5b400;
 }
@@ -53,35 +57,35 @@ color:#f5b400;
 }
 
 .hero{
-background:url('images/banner.jpg') center/cover no-repeat;
 height:100vh;
+background:url('images/banner.jpg') center center/cover no-repeat;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 padding:20px;
 margin-top:70px;
 }
 
-.hero-box{
+.hero-overlay{
 background:rgba(0,0,0,0.7);
 padding:60px;
 border-radius:20px;
 max-width:950px;
 }
 
-.hero-box h1{
+.hero-overlay h1{
 font-size:72px;
 color:#f5b400;
 margin-bottom:20px;
 }
 
-.hero-box h2{
-font-size:40px;
+.hero-overlay h2{
+font-size:42px;
 margin-bottom:20px;
 }
 
-.hero-box p{
+.hero-overlay p{
 font-size:22px;
 line-height:1.8;
 }
@@ -92,7 +96,7 @@ padding:100px 10%;
 
 .section-title{
 text-align:center;
-font-size:48px;
+font-size:50px;
 margin-bottom:60px;
 color:#f5b400;
 }
@@ -101,18 +105,23 @@ color:#f5b400;
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
 gap:30px;
-text-align:center;
 }
 
 .stat-box{
 background:#111827;
 padding:40px;
 border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.stat-box:hover{
+transform:translateY(-10px);
 }
 
 .stat-box h3{
-font-size:50px;
+font-size:52px;
 color:#f5b400;
 margin-bottom:10px;
 }
@@ -137,7 +146,7 @@ transform:translateY(-10px);
 
 .card img{
 width:100%;
-height:250px;
+height:240px;
 object-fit:cover;
 }
 
@@ -158,12 +167,12 @@ margin-bottom:20px;
 
 .btn{
 display:inline-block;
-padding:12px 25px;
+padding:12px 24px;
 background:#f5b400;
 color:black;
 text-decoration:none;
-font-weight:bold;
 border-radius:10px;
+font-weight:bold;
 transition:0.3s;
 }
 
@@ -174,40 +183,41 @@ background:white;
 .about{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:40px;
+gap:50px;
 align-items:center;
 }
 
 .about img{
 width:100%;
 border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
 }
 
 .about-text h2{
-font-size:48px;
+font-size:50px;
 color:#f5b400;
 margin-bottom:25px;
 }
 
 .about-text p{
-line-height:2;
 font-size:18px;
+line-height:2;
 }
 
 .contact{
 background:#111827;
-padding:80px 10%;
+padding:100px 10%;
 text-align:center;
 }
 
 .contact h2{
 font-size:50px;
-margin-bottom:30px;
+margin-bottom:40px;
 color:#f5b400;
 }
 
 .contact p{
-font-size:22px;
+font-size:24px;
 margin-bottom:15px;
 }
 
@@ -229,10 +239,10 @@ border-radius:50%;
 display:flex;
 justify-content:center;
 align-items:center;
-font-size:36px;
+font-size:34px;
 color:white;
 text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.4);
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
 z-index:999;
 }
 
@@ -243,15 +253,19 @@ padding:20px;
 flex-direction:column;
 }
 
-.hero-box h1{
-font-size:48px;
+nav{
+margin-top:15px;
 }
 
-.hero-box h2{
+.hero-overlay h1{
+font-size:45px;
+}
+
+.hero-overlay h2{
 font-size:28px;
 }
 
-.hero-box p{
+.hero-overlay p{
 font-size:18px;
 }
 
@@ -285,7 +299,7 @@ ALJABRI
 
 <section class="hero" id="home">
 
-<div class="hero-box">
+<div class="hero-overlay">
 
 <h1>
 ALJABRI PROJECTS
@@ -353,6 +367,7 @@ Heavy duty primary crusher for quarry and mining operations.
 </p>
 <a href="#contact" class="btn">Request Quote</a>
 </div>
+
 </div>
 
 <div class="card">
@@ -365,6 +380,7 @@ Advanced crushing solutions for industrial aggregate production.
 </p>
 <a href="#contact" class="btn">Request Quote</a>
 </div>
+
 </div>
 
 <div class="card">
@@ -377,6 +393,7 @@ Industrial screening systems engineered for precise material separation.
 </p>
 <a href="#contact" class="btn">Request Quote</a>
 </div>
+
 </div>
 
 </div>
@@ -392,6 +409,7 @@ OUR SERVICES
 <div class="products">
 
 <div class="card">
+
 <img src="images/Services.jpg">
 
 <div class="card-content">
@@ -400,9 +418,11 @@ OUR SERVICES
 Advanced crushing systems inspired by global industrial standards.
 </p>
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="images/quarries.jpg">
 
 <div class="card-content">
@@ -411,9 +431,11 @@ Advanced crushing systems inspired by global industrial standards.
 Production optimization and operational quarry solutions.
 </p>
 </div>
+
 </div>
 
 <div class="card">
+
 <img src="images/maintenance.jpg">
 
 <div class="card-content">
@@ -422,6 +444,7 @@ Production optimization and operational quarry solutions.
 Preventive and corrective maintenance for heavy-duty equipment.
 </p>
 </div>
+
 </div>
 
 </div>
