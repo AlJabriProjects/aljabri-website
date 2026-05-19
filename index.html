@@ -1,532 +1,923 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ALJABRI PROJECTS | Crushing & Screening Solutions</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ALJABRI PROJECTS - حلول الكسارات والفرز الاحترافية في عمّان">
+    <meta name="keywords" content="كسارات، معدات التعدين، حلول الفرز، عمّان، سلطنة عمّان">
+    <title>ALJABRI PROJECTS - حلول الكسارات والفرز</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-}
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #0a0a0a;
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
 
-body{
-font-family:'Poppins',sans-serif;
-background:#0b1118;
-color:white;
-overflow-x:hidden;
-}
+        html {
+            scroll-behavior: smooth;
+        }
 
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:rgba(0,0,0,0.92);
-backdrop-filter:blur(10px);
-padding:18px 7%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:1000;
-border-bottom:2px solid #f0b400;
-}
+        /* ============= HEADER ============= */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 3px solid #ffd000;
+            padding: 15px 0;
+            box-shadow: 0 4px 20px rgba(255, 208, 0, 0.2);
+        }
 
-.logo{
-font-family:'Oswald',sans-serif;
-font-size:32px;
-font-weight:700;
-color:#f0b400;
-letter-spacing:2px;
-}
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+        }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:30px;
-font-weight:500;
-transition:0.3s;
-}
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            color: #ffd000;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-nav a:hover{
-color:#f0b400;
-}
+        .logo i {
+            font-size: 32px;
+        }
 
-.hero{
-padding-top:110px;
-background:#000;
-text-align:center;
-}
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: 600;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
 
-.hero img{
-width:100%;
-display:block;
-}
+        nav a:hover {
+            color: #ffd000;
+            text-shadow: 0 0 10px rgba(255, 208, 0, 0.5);
+        }
 
-.hero-content{
-padding:60px 8%;
-background:linear-gradient(to bottom,#0f1722,#111827);
-}
+        /* ============= HERO ============= */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            margin-top: 70px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+        }
 
-.hero-content h1{
-font-family:'Oswald',sans-serif;
-font-size:60px;
-line-height:1.1;
-margin-bottom:20px;
-color:#f0b400;
-}
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+            filter: brightness(0.3) contrast(1.2);
+            z-index: 1;
+        }
 
-.hero-content p{
-font-size:18px;
-max-width:900px;
-margin:auto;
-line-height:1.8;
-color:#ddd;
-}
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 40px 20px;
+            max-width: 1000px;
+        }
 
-.buttons{
-margin-top:35px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
+        .hero h1 {
+            font-size: 80px;
+            line-height: 1.1;
+            font-weight: 900;
+            color: #ffd000;
+            text-shadow: 0 0 40px rgba(255, 208, 0, 0.8), 0 0 80px rgba(255, 208, 0, 0.4);
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            animation: slideDown 1s ease-out;
+        }
 
-.btn{
-padding:16px 35px;
-background:#f0b400;
-color:#000;
-font-weight:700;
-text-decoration:none;
-border-radius:6px;
-transition:0.3s;
-}
+        .hero h2 {
+            font-size: 42px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 15px rgba(0, 0, 0, 0.9);
+            animation: slideUp 1s ease-out 0.2s backwards;
+        }
 
-.btn:hover{
-background:white;
-transform:translateY(-4px);
-}
+        .hero-subtitle {
+            font-size: 22px;
+            color: #ffd000;
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: slideUp 1s ease-out 0.4s backwards;
+        }
 
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
-padding:80px 8%;
-background:#111827;
-}
+        .hero p {
+            max-width: 800px;
+            margin: 30px auto;
+            font-size: 18px;
+            line-height: 2;
+            color: #e0e0e0;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9);
+            animation: slideUp 1s ease-out 0.6s backwards;
+        }
 
-.stat-box{
-background:#1b2431;
-padding:40px 25px;
-text-align:center;
-border-radius:14px;
-transition:0.4s;
-border:1px solid rgba(255,255,255,0.05);
-}
+        .btn-primary {
+            display: inline-block;
+            padding: 16px 45px;
+            background: linear-gradient(135deg, #ffd000 0%, #ffed4e 100%);
+            color: #000;
+            text-decoration: none;
+            font-weight: 900;
+            border-radius: 8px;
+            transition: 0.3s;
+            box-shadow: 0 0 30px rgba(255, 208, 0, 0.6);
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 20px;
+            animation: slideUp 1s ease-out 0.8s backwards;
+        }
 
-.stat-box:hover{
-transform:translateY(-10px);
-box-shadow:0 15px 35px rgba(240,180,0,0.2);
-}
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 50px rgba(255, 208, 0, 1);
+        }
 
-.stat-box h2{
-font-size:42px;
-color:#f0b400;
-margin-bottom:10px;
-font-family:'Oswald',sans-serif;
-}
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.section-title{
-text-align:center;
-padding:80px 20px 50px;
-font-size:50px;
-font-family:'Oswald',sans-serif;
-color:#f0b400;
-}
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
 
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-gap:35px;
-padding:0 8% 80px;
-}
+        /* ============= STATS ============= */
+        .stats {
+            padding: 60px 8%;
+            background: #000;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            border-top: 3px solid #ffd000;
+            border-bottom: 3px solid #ffd000;
+        }
 
-.card{
-background:#1b2431;
-border-radius:16px;
-overflow:hidden;
-transition:0.4s;
-}
+        .stat-item {
+            text-align: center;
+        }
 
-.card:hover{
-transform:translateY(-12px);
-box-shadow:0 20px 40px rgba(0,0,0,0.5);
-}
+        .stat-number {
+            font-size: 48px;
+            font-weight: 900;
+            color: #ffd000;
+            margin-bottom: 10px;
+        }
 
-.card img{
-width:100%;
-height:250px;
-object-fit:cover;
-}
+        .stat-text {
+            font-size: 16px;
+            color: #ddd;
+            font-weight: 600;
+        }
 
-.card-content{
-padding:25px;
-}
+        /* ============= PRODUCTS ============= */
+        .products {
+            padding: 100px 8%;
+            background: #0d0d0d;
+        }
 
-.card-content h3{
-font-size:28px;
-margin-bottom:15px;
-color:#f0b400;
-font-family:'Oswald',sans-serif;
-}
+        .section-title {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 80px;
+            color: #ffd000;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
 
-.card-content p{
-line-height:1.8;
-color:#ddd;
-margin-bottom:20px;
-}
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #ffd000, transparent);
+        }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-gap:30px;
-padding:0 8% 80px;
-}
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
 
-.service{
-background:#1b2431;
-padding:40px 30px;
-border-radius:16px;
-transition:0.4s;
-text-align:center;
-}
+        .product-card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
 
-.service:hover{
-background:#222f40;
-transform:translateY(-10px);
-}
+        .product-card:hover {
+            transform: translateY(-10px);
+            border-color: #ffd000;
+            box-shadow: 0 15px 50px rgba(255, 208, 0, 0.5);
+        }
 
-.service h3{
-color:#f0b400;
-margin-bottom:15px;
-font-size:28px;
-font-family:'Oswald',sans-serif;
-}
+        .product-image {
+            width: 100%;
+            height: 280px;
+            background: linear-gradient(135deg, #fff 0%, #f0f0f0 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            position: relative;
+        }
 
-.about{
-padding:90px 8%;
-background:#111827;
-text-align:center;
-}
+        .product-image img {
+            width: 90%;
+            height: 90%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
 
-.about p{
-max-width:1000px;
-margin:auto;
-line-height:2;
-font-size:18px;
-color:#ddd;
-margin-top:25px;
-}
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
 
-.contact{
-padding:90px 8%;
-text-align:center;
-}
+        .product-info {
+            padding: 30px;
+        }
 
-.contact-box{
-background:#1b2431;
-padding:50px;
-border-radius:16px;
-max-width:900px;
-margin:auto;
-}
+        .product-name {
+            font-size: 26px;
+            font-weight: 900;
+            color: #ffd000;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-.contact-box h2{
-font-size:45px;
-margin-bottom:30px;
-color:#f0b400;
-font-family:'Oswald',sans-serif;
-}
+        .product-description {
+            font-size: 15px;
+            color: #d0d0d0;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
 
-.contact-box p{
-margin:18px 0;
-font-size:20px;
-}
+        .product-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
 
-footer{
-background:#000;
-padding:30px;
-text-align:center;
-color:#999;
-font-size:15px;
-border-top:2px solid #f0b400;
-}
+        .feature-tag {
+            background: rgba(255, 208, 0, 0.2);
+            color: #ffd000;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 1px solid #ffd000;
+        }
 
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25d366;
-color:white;
-width:70px;
-height:70px;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:50%;
-font-size:35px;
-text-decoration:none;
-z-index:999;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
-}
+        /* ============= SERVICES ============= */
+        .services {
+            padding: 100px 8%;
+            background: #0a0a0a;
+        }
 
-@media(max-width:768px){
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 35px;
+            margin-top: 50px;
+        }
 
-.hero-content h1{
-font-size:40px;
-}
+        .service-card {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            padding: 45px 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #333;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+        }
 
-.section-title{
-font-size:38px;
-}
+        .service-card:hover {
+            border-color: #ffd000;
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(255, 208, 0, 0.4);
+        }
 
-nav{
-display:none;
-}
+        .service-icon {
+            font-size: 60px;
+            margin-bottom: 20px;
+            color: #ffd000;
+        }
 
-}
+        .service-title {
+            font-size: 26px;
+            color: #ffd000;
+            margin-bottom: 15px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
 
-</style>
+        .service-description {
+            color: #ddd;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* ============= ABOUT ============= */
+        .about {
+            padding: 100px 8%;
+            background: #000;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            width: 100%;
+            border-radius: 15px;
+            border: 4px solid #ffd000;
+            box-shadow: 0 0 40px rgba(255, 208, 0, 0.4);
+            overflow: hidden;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .about-content h2 {
+            font-size: 48px;
+            color: #ffd000;
+            margin-bottom: 30px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .about-content p {
+            font-size: 17px;
+            line-height: 2;
+            color: #d0d0d0;
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            margin-top: 30px;
+            display: grid;
+            gap: 15px;
+        }
+
+        .about-feature {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 16px;
+            color: #e0e0e0;
+        }
+
+        .about-feature i {
+            color: #ffd000;
+            font-size: 24px;
+        }
+
+        /* ============= CONTACT ============= */
+        .contact {
+            padding: 100px 8%;
+            background: #0d0d0d;
+            text-align: center;
+        }
+
+        .contact-box {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-radius: 15px;
+            padding: 70px 50px;
+            border: 3px solid #ffd000;
+            box-shadow: 0 0 50px rgba(255, 208, 0, 0.4);
+        }
+
+        .contact-box h2 {
+            font-size: 48px;
+            color: #ffd000;
+            margin-bottom: 50px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .contact-item {
+            background: #000;
+            padding: 35px;
+            border-radius: 12px;
+            border-left: 5px solid #ffd000;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact-item-title {
+            color: #ffd000;
+            margin-bottom: 20px;
+            font-size: 20px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item-content {
+            font-size: 16px;
+            line-height: 2;
+            color: #e0e0e0;
+        }
+
+        .contact-item-content a {
+            color: #ffd000;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .contact-item-content a:hover {
+            text-decoration: underline;
+        }
+
+        /* ============= FOOTER ============= */
+        footer {
+            padding: 40px 20px;
+            text-align: center;
+            background: #000;
+            color: #888;
+            border-top: 3px solid #ffd000;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        /* ============= RESPONSIVE ============= */
+        @media (max-width: 1024px) {
+            .header-container {
+                padding: 0 20px;
+            }
+
+            nav a {
+                margin: 0 12px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 60px;
+            }
+
+            .hero h2 {
+                font-size: 32px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 10px 0;
+            }
+
+            .header-container {
+                flex-direction: column;
+                gap: 15px;
+                padding: 0 15px;
+            }
+
+            nav {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                justify-content: center;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 11px;
+            }
+
+            .hero {
+                margin-top: 150px;
+            }
+
+            .hero h1 {
+                font-size: 45px;
+            }
+
+            .hero h2 {
+                font-size: 24px;
+            }
+
+            .hero-subtitle {
+                font-size: 16px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section-title {
+                font-size: 35px;
+                margin-bottom: 50px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about {
+                padding: 60px 20px;
+            }
+
+            .about-content h2 {
+                font-size: 35px;
+            }
+
+            .contact-box {
+                padding: 40px 20px;
+            }
+
+            .contact-box h2 {
+                font-size: 35px;
+            }
+
+            .stats {
+                padding: 40px 20px;
+                gap: 20px;
+            }
+
+            .stat-number {
+                font-size: 36px;
+            }
+        }
+
+        /* ============= SCROLL ANIMATIONS ============= */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-
-<div class="logo">
-ALJABRI
-</div>
-
-<nav>
-<a href="#products">Products</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero">
-
-<img src="https://raw.githubusercontent.com/AlJabriProjects/aljabri-website/main/banner.jpg" alt="ALJABRI PROJECTS">
-
-<div class="hero-content">
-
-<h1>
-CRUSHING & SCREENING SOLUTIONS
-</h1>
-
-<p>
-Complete industrial solutions for crusher plants, quarry operations,
-screening systems, conveyor belts and heavy equipment maintenance across Oman and GCC countries.
-</p>
-
-<div class="buttons">
-
-<a href="#products" class="btn">
-Explore Products
-</a>
-
-<a href="#contact" class="btn">
-Request Quote
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="stats">
-
-<div class="stat-box">
-<h2>20+</h2>
-<p>Years Experience</p>
-</div>
-
-<div class="stat-box">
-<h2>500+</h2>
-<p>Installations</p>
-</div>
-
-<div class="stat-box">
-<h2>250+</h2>
-<p>Permanent Clients</p>
-</div>
-
-<div class="stat-box">
-<h2>24/7</h2>
-<p>Technical Support</p>
-</div>
-
-</section>
-
-<h2 class="section-title" id="products">
-OUR PRODUCTS
-</h2>
-
-<section class="products">
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-
-<h3>Jaw Crusher</h3>
-
-<p>
-Heavy duty primary crushing systems designed for quarry and mining operations.
-</p>
-
-<a href="#contact" class="btn">
-Request Quote
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-
-<h3>Cone Crusher</h3>
-
-<p>
-Advanced crushing solutions engineered for aggregate and industrial production.
-</p>
-
-<a href="#contact" class="btn">
-Request Quote
-</a>
-
-</div>
-
-</div>
-
-<div class="card">
-
-<img src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?q=80&w=1200&auto=format&fit=crop">
-
-<div class="card-content">
-
-<h3>Vibrating Screen</h3>
-
-<p>
-Industrial screening systems engineered for precise material separation.
-</p>
-
-<a href="#contact" class="btn">
-Request Quote
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<h2 class="section-title" id="services">
-OUR SERVICES
-</h2>
-
-<section class="services">
-
-<div class="service">
-<h3>Crusher Engineering</h3>
-<p>
-Advanced crushing systems inspired by global industrial standards.
-</p>
-</div>
-
-<div class="service">
-<h3>Quarry Management</h3>
-<p>
-Production optimization and operational quarry solutions.
-</p>
-</div>
-
-<div class="service">
-<h3>Industrial Maintenance</h3>
-<p>
-Preventive and corrective maintenance for heavy-duty equipment.
-</p>
-</div>
-
-<div class="service">
-<h3>Spare Parts Supply</h3>
-<p>
-Complete spare parts solutions for crushers and conveyor systems.
-</p>
-</div>
-
-</section>
-
-<section class="about" id="about">
-
-<h2 class="section-title">
-ABOUT ALJABRI
-</h2>
-
-<p>
-ALJABRI PROJECTS specializes in crusher systems,
-quarry equipment, industrial production lines and conveyor systems across Oman and GCC.
-
-We provide manufacturing, installation, maintenance and operational support
-with focus on industrial quality, performance and reliability.
-</p>
-
-</section>
-
-<section class="contact" id="contact">
-
-<div class="contact-box">
-
-<h2>
-CONTACT US
-</h2>
-
-<p>📞 +968 9275 7720</p>
-<p>📞 +968 9224 3919</p>
-<p>📞 +968 7170 4621</p>
-<p>📞 +968 9607 6337</p>
-
-<p>✉ info@aljabri.co</p>
-
-<p>📍 Sohar - Sultanate of Oman</p>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 ALJABRI INDUSTRIAL SOLUTIONS — ALL RIGHTS RESERVED
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/96892757720" target="_blank">
-💬
-</a>
+    <!-- ============= HEADER ============= -->
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-cog"></i> ALJABRI
+            </a>
+            <nav>
+                <a href="#products">المنتجات</a>
+                <a href="#services">الخدمات</a>
+                <a href="#about">حولنا</a>
+                <a href="#contact">تواصل معنا</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ============= HERO ============= -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>ALJABRI</h1>
+            <h2>حلول الكسارات والفرز</h2>
+            <div class="hero-subtitle">⚙️ CRUSHING & SCREENING SOLUTIONS ⚙️</div>
+            <p>
+                توريد • تركيب • صيانة • قطع غيار<br>
+                حلول متكاملة لمحطات الكسارات وقطاعات التعدين والبناء
+            </p>
+            <a href="#products" class="btn-primary">استكشف منتجاتنا</a>
+        </div>
+    </section>
+
+    <!-- ============= STATS ============= -->
+    <section class="stats">
+        <div class="stat-item">
+            <div class="stat-number">500+</div>
+            <div class="stat-text">تثبيت ناجح</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-text">شريك صناعي</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">99.8%</div>
+            <div class="stat-text">رضا العملاء</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">24/7</div>
+            <div class="stat-text">دعم فني</div>
+        </div>
+    </section>
+
+    <!-- ============= PRODUCTS ============= -->
+    <section class="products" id="products">
+        <h2 class="section-title">منتجاتنا</h2>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=500&auto=format&fit=crop" alt="Jaw Crusher">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">كسارة الفك</div>
+                    <p class="product-description">
+                        كسارة فك ثقيلة الكفاءة مصممة لكسر الحجارة الصلبة والجرانيت ومواد التعدين بكفاءة عالية
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">قوة عالية</span>
+                        <span class="feature-tag">كفاءة</span>
+                        <span class="feature-tag">موثوق</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092161562-40038e57e0b9?q=80&w=500&auto=format&fit=crop" alt="Cone Crusher">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">كسارة مخروطية</div>
+                    <p class="product-description">
+                        حل كسر ثانوي وثالثي عالي الأداء لإنتاج المجاميع والتعدين
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">أداء عالي</span>
+                        <span class="feature-tag">متقدمة</span>
+                        <span class="feature-tag">فعالة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092162562-40038e57e0b9?q=80&w=500&auto=format&fit=crop" alt="Impact Crusher">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">كسارة التأثير</div>
+                    <p class="product-description">
+                        تكنولوجيا كسر تأثير فعالة توفر شكل جزيء متفوق وتكاليف تشغيل أقل
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">اقتصادية</span>
+                        <span class="feature-tag">نظيفة</span>
+                        <span class="feature-tag">فعالة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092413357-a2e11bbfcb4e?q=80&w=500&auto=format&fit=crop" alt="VSI Machine">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">آلة VSI</div>
+                    <p class="product-description">
+                        كسارات تأثير عمودي مثالية للرمل الصناعي وتشكيل المجاميع وتطبيقات إعادة التدوير
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">دقيقة</span>
+                        <span class="feature-tag">متقدمة</span>
+                        <span class="feature-tag">موثوقة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092918092-412a78c247b5?q=80&w=500&auto=format&fit=crop" alt="Vibrating Screens">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">شاشات الفرز</div>
+                    <p class="product-description">
+                        أنظمة فرز دقيقة لفصل المواد إلى أحجام متعددة بأقصى كفاءة
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">دقة عالية</span>
+                        <span class="feature-tag">قوية</span>
+                        <span class="feature-tag">موثوقة</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1581092162562-40038e57e0b9?q=80&w=500&auto=format&fit=crop" alt="Conveyor Belts">
+                </div>
+                <div class="product-info">
+                    <div class="product-name">السيور الناقلة</div>
+                    <p class="product-description">
+                        أنظمة نقل صناعية لنقل المجاميع والتعدين والمواد الإنشائية بأمان
+                    </p>
+                    <div class="product-features">
+                        <span class="feature-tag">آمنة</span>
+                        <span class="feature-tag">فعالة</span>
+                        <span class="feature-tag">قوية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= SERVICES ============= -->
+    <section class="services" id="services">
+        <h2 class="section-title">خدماتنا</h2>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-truck"></i></div>
+                <div class="service-title">التوريد</div>
+                <div class="service-description">
+                    آلات كسارة عالية الجودة وقطع غيار وحقول معدات صناعية
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-wrench"></i></div>
+                <div class="service-title">التركيب</div>
+                <div class="service-description">
+                    تركيب واختبار احترافي لمحطات الكسارات
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-tools"></i></div>
+                <div class="service-title">الصيانة</div>
+                <div class="service-description">
+                    خدمات الصيانة الدورية والفورية لضمان الأداء الأمثل
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-cog"></i></div>
+                <div class="service-title">قطع الغيار</div>
+                <div class="service-description">
+                    قطع غيار أصلية عالية الجودة ومستلزمات صناعية متنوعة
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= ABOUT ============= -->
+    <section class="about" id="about">
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?q=80&w=800&auto=format&fit=crop" alt="عمليات التعدين">
+        </div>
+
+        <div class="about-content">
+            <h2>إدارة المحاجر</h2>
+            <p>
+                توفر ALJABRI PROJECTS حلول متكاملة لإدارة المحاجر ومحطات الكسارات تشمل الاستخراج والكسر والفرز والصيانة وتحسين الإنتاجية.
+            </p>
+            <p>
+                نركز على زيادة الإنتاجية وتقليل تكاليف التشغيل وتقديم حلول صناعية موثوقة لقطاعات التعدين والبناء.
+            </p>
+
+            <div class="about-features">
+                <div class="about-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>بناء قوي وأداء أفضل</span>
+                </div>
+                <div class="about-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>جودة يمكنك الوثوق بها</span>
+                </div>
+                <div class="about-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>دعم فني 24/7</span>
+                </div>
+                <div class="about-feature">
+                    <i class="fas fa-check-circle"></i>
+                    <span>حلول مخصصة وموثوقة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= CONTACT ============= -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h2>تواصل معنا</h2>
+
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-item-title">📍 العنوان</div>
+                    <div class="contact-item-content">
+                        ALJABRI PROJECTS<br>
+                        منطقة المنطقة الصناعية<br>
+                        الأوي - صحار<br>
+                        سلطنة عمّان
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-title">📱 الهاتف</div>
+                    <div class="contact-item-content">
+                        <a href="tel:+96892243919">+968 9224 3919</a><br>
+                        <a href="tel:+96892757720">+968 9275 7720</a><br>
+                        <a href="tel:+96871704621">+968 7170 4621</a><br>
+                        <a href="tel:+96896076337">+968 9607 6337</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-item-title">📧 التواصل</div>
+                    <div class="contact-item-content">
+                        <a href="mailto:info@aljabri.co">info@aljabri.co</a><br>
+                        <a href="https://www.aljabri.co" target="_blank">www.aljabri.co</a><br>
+                        🇴🇲 مصنوع في عمّان
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============= FOOTER ============= -->
+    <footer>
+        <p>&copy; 2026 ALJABRI PROJECTS — جميع الحقوق محفوظة | حلول الكسارات والفرز المتقدمة</p>
+    </footer>
 
 </body>
 </html>
