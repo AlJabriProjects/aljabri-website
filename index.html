@@ -1,500 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>ALJABRI PROJECTS</title>
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-scroll-behavior:smooth;
-font-family:Arial,sans-serif;
-}
-
-body{
-background:#0b0f14;
-color:white;
-overflow-x:hidden;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-background:#111827;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-z-index:999;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
-}
-
-.logo{
-font-size:34px;
-font-weight:bold;
-color:#f5b400;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:25px;
-font-size:18px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#f5b400;
-}
-
-.hero{
-height:100vh;
-background:url('images/banner.jpg') center center/cover no-repeat;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-margin-top:70px;
-}
-
-.hero-overlay{
-background:rgba(0,0,0,0.7);
-padding:60px;
-border-radius:20px;
-max-width:950px;
-}
-
-.hero-overlay h1{
-font-size:72px;
-color:#f5b400;
-margin-bottom:20px;
-}
-
-.hero-overlay h2{
-font-size:42px;
-margin-bottom:20px;
-}
-
-.hero-overlay p{
-font-size:22px;
-line-height:1.8;
-}
-
-.section{
-padding:100px 10%;
-}
-
-.section-title{
-text-align:center;
-font-size:50px;
-margin-bottom:60px;
-color:#f5b400;
-}
-
-.stats{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
-}
-
-.stat-box{
-background:#111827;
-padding:40px;
-border-radius:20px;
-text-align:center;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
-transition:0.4s;
-}
-
-.stat-box:hover{
-transform:translateY(-10px);
-}
-
-.stat-box h3{
-font-size:52px;
-color:#f5b400;
-margin-bottom:10px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-}
-
-.card{
-background:#111827;
-border-radius:20px;
-overflow:hidden;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
-transition:0.4s;
-}
-
-.card:hover{
-transform:translateY(-10px);
-}
-
-.card img{
-width:100%;
-height:240px;
-object-fit:cover;
-}
-
-.card-content{
-padding:25px;
-}
-
-.card-content h3{
-font-size:28px;
-margin-bottom:15px;
-color:#f5b400;
-}
-
-.card-content p{
-line-height:1.8;
-margin-bottom:20px;
-}
-
-.btn{
-display:inline-block;
-padding:12px 24px;
-background:#f5b400;
-color:black;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
-transition:0.3s;
-}
-
-.btn:hover{
-background:white;
-}
-
-.about{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
-gap:50px;
-align-items:center;
-}
-
-.about img{
-width:100%;
-border-radius:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
-}
-
-.about-text h2{
-font-size:50px;
-color:#f5b400;
-margin-bottom:25px;
-}
-
-.about-text p{
-font-size:18px;
-line-height:2;
-}
-
-.contact{
-background:#111827;
-padding:100px 10%;
-text-align:center;
-}
-
-.contact h2{
-font-size:50px;
-margin-bottom:40px;
-color:#f5b400;
-}
-
-.contact p{
-font-size:24px;
-margin-bottom:15px;
-}
-
-footer{
-background:black;
-padding:25px;
-text-align:center;
-font-size:16px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:25px;
-right:25px;
-background:#25D366;
-width:70px;
-height:70px;
-border-radius:50%;
-display:flex;
-justify-content:center;
-align-items:center;
-font-size:34px;
-color:white;
-text-decoration:none;
-box-shadow:0 5px 20px rgba(0,0,0,0.5);
-z-index:999;
-}
-
-@media(max-width:768px){
-
-header{
-padding:20px;
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-.hero-overlay h1{
-font-size:45px;
-}
-
-.hero-overlay h2{
-font-size:28px;
-}
-
-.hero-overlay p{
-font-size:18px;
-}
-
-.section-title{
-font-size:38px;
-}
-
-}
-
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">
-ALJABRI
-</div>
-
-<nav>
-<a href="#home">Home</a>
-<a href="#products">Products</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-
-</header>
-
-<section class="hero" id="home">
-
-<div class="hero-overlay">
-
-<h1>
-ALJABRI PROJECTS
-</h1>
-
-<h2>
-CRUSHING & SCREENING SOLUTIONS
-</h2>
-
-<p>
-Complete Crusher Plant Solutions — Supply, Installation, Maintenance & Spare Parts
-</p>
-
-</div>
-
-</section>
-
-<section class="section">
+<section class="section" id="projects">
 
 <h2 class="section-title">
-OUR EXPERIENCE
-</h2>
-
-<div class="stats">
-
-<div class="stat-box">
-<h3>20+</h3>
-<p>Years Experience</p>
-</div>
-
-<div class="stat-box">
-<h3>500+</h3>
-<p>Installations</p>
-</div>
-
-<div class="stat-box">
-<h3>250+</h3>
-<p>Permanent Clients</p>
-</div>
-
-<div class="stat-box">
-<h3>24/7</h3>
-<p>Technical Support</p>
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="products">
-
-<h2 class="section-title">
-OUR PRODUCTS
+OUR PROJECTS
 </h2>
 
 <div class="products">
-
-<div class="card">
-<img src="images/jaw-crusher.jpg">
-
-<div class="card-content">
-<h3>Jaw Crusher</h3>
-<p>
-Heavy duty primary crusher for quarry and mining operations.
-</p>
-<a href="#contact" class="btn">Request Quote</a>
-</div>
-
-</div>
-
-<div class="card">
-<img src="images/con-crusher.jpg">
-
-<div class="card-content">
-<h3>Cone Crusher</h3>
-<p>
-Advanced crushing solutions for industrial aggregate production.
-</p>
-<a href="#contact" class="btn">Request Quote</a>
-</div>
-
-</div>
-
-<div class="card">
-<img src="images/screen.jpg">
-
-<div class="card-content">
-<h3>Vibrating Screen</h3>
-<p>
-Industrial screening systems engineered for precise material separation.
-</p>
-<a href="#contact" class="btn">Request Quote</a>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<section class="section" id="services">
-
-<h2 class="section-title">
-OUR SERVICES
-</h2>
-
-<div class="products">
-
-<div class="card">
-
-<img src="images/Services.jpg">
-
-<div class="card-content">
-<h3>Crusher Engineering</h3>
-<p>
-Advanced crushing systems inspired by global industrial standards.
-</p>
-</div>
-
-</div>
 
 <div class="card">
 
 <img src="images/quarries.jpg">
 
 <div class="card-content">
-<h3>Quarry Management</h3>
+
+<h3>
+Crusher Plant Installation
+</h3>
+
 <p>
-Production optimization and operational quarry solutions.
+Complete crushing and screening plant installation for quarry operations in Oman and GCC.
 </p>
+
 </div>
 
 </div>
 
 <div class="card">
 
-<img src="images/maintenance.jpg">
+<img src="images/conveyor.jpg">
 
 <div class="card-content">
-<h3>Industrial Maintenance</h3>
+
+<h3>
+Conveyor Systems
+</h3>
+
 <p>
-Preventive and corrective maintenance for heavy-duty equipment.
+Heavy-duty conveyor systems engineered for continuous industrial production.
 </p>
-</div>
 
 </div>
 
 </div>
 
-</section>
-
-<section class="section about" id="about">
+<div class="card">
 
 <img src="images/Industry.jpg">
 
-<div class="about-text">
+<div class="card-content">
 
-<h2>
-ABOUT ALJABRI
-</h2>
+<h3>
+Industrial Production Lines
+</h3>
 
 <p>
-ALJABRI PROJECTS specializes in crusher systems, quarry equipment, industrial production lines and conveyor systems across Oman and GCC.
-<br><br>
-We provide manufacturing, installation, maintenance and operational support with focus on industrial quality and reliability.
+Integrated industrial solutions for aggregate production and material handling systems.
 </p>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
-<section class="contact" id="contact">
 
-<h2>
-CONTACT US
+
+<section class="section" id="gallery">
+
+<h2 class="section-title">
+PROJECT GALLERY
 </h2>
 
-<p>📞 +968 9275 7720</p>
-<p>📞 +968 9224 3919</p>
-<p>📞 +968 7170 4621</p>
-<p>📞 +968 9607 6337</p>
+<div class="products">
 
-<p>✉ info@aljabri.co</p>
+<div class="card">
+<img src="images/banner.jpg">
+</div>
 
-<p>📍 Sohar - Sultanate of Oman</p>
+<div class="card">
+<img src="images/jaw-crusher.jpg">
+</div>
+
+<div class="card">
+<img src="images/con-crusher.jpg">
+</div>
+
+<div class="card">
+<img src="images/screen.jpg">
+</div>
+
+<div class="card">
+<img src="images/conveyor.jpg">
+</div>
+
+<div class="card">
+<img src="images/maintenance.jpg">
+</div>
+
+</div>
 
 </section>
 
-<footer>
-© 2026 ALJABRI INDUSTRIAL SOLUTIONS — ALL RIGHTS RESERVED
-</footer>
 
-<a class="whatsapp" href="https://wa.me/96892757720">
-💬
+
+<section class="section">
+
+<h2 class="section-title">
+DOWNLOAD COMPANY PROFILE
+</h2>
+
+<div style="
+text-align:center;
+">
+
+<a href="company-profile.pdf" class="btn" target="_blank">
+Download PDF Profile
 </a>
 
-</body>
-</html>
+</div>
+
+</section>
