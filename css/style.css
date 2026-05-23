@@ -209,13 +209,14 @@ overflow:hidden;
 border-radius:30px;
 background:#111;
 box-shadow:0 20px 50px rgba(0,0,0,0.45);
-height:520px;
+height:420px;
 }
 
 .project-card img{
 width:100%;
 height:100%;
 object-fit:cover;
+object-position:center;
 transition:0.7s;
 }
 
@@ -229,7 +230,9 @@ bottom:0;
 left:0;
 width:100%;
 padding:50px;
-background:linear-gradient(
+
+background:
+linear-gradient(
 transparent,
 rgba(0,0,0,0.95)
 );
@@ -245,6 +248,7 @@ font-weight:700;
 .contact{
 padding:120px 7%;
 background:#111;
+
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
