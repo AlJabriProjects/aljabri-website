@@ -221,6 +221,34 @@ overflow:hidden;
 border-radius:25px;
 background:#111;
 box-shadow:0 15px 40px rgba(0,0,0,0.35);
+
+opacity:0;
+transform:translateY(60px);
+animation:fadeUp 1s forwards;
+}
+
+.project-card:nth-child(1){
+animation-delay:0.2s;
+}
+
+.project-card:nth-child(2){
+animation-delay:0.4s;
+}
+
+.project-card:nth-child(3){
+animation-delay:0.6s;
+}
+
+.project-card:nth-child(4){
+animation-delay:0.8s;
+}
+
+.project-card:nth-child(5){
+animation-delay:1s;
+}
+
+.project-card:nth-child(6){
+animation-delay:1.2s;
 }
 
 .project-card img{
@@ -251,6 +279,17 @@ background:linear-gradient(transparent,rgba(0,0,0,0.95));
 
 .project-overlay h3{
 font-size:26px;
+}
+
+/* SCROLL ANIMATION */
+
+@keyframes fadeUp{
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
 }
 
 /* CONTACT */
