@@ -1,86 +1,297 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects - ALJABRI PROJECTS</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="stylesheet" href="../css/style.css">
+
+<title>Projects | ALJABRI PROJECTS</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0f14;
+color:white;
+}
+
+nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#111827;
+padding:20px 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:999;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.logo{
+font-size:30px;
+font-weight:800;
+color:#f5b400;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+color:#f5b400;
+}
+
+.page-title{
+padding-top:160px;
+text-align:center;
+margin-bottom:70px;
+}
+
+.page-title h1{
+font-size:65px;
+color:#f5b400;
+margin-bottom:20px;
+}
+
+.page-title p{
+font-size:22px;
+color:#ccc;
+}
+
+.container{
+width:90%;
+max-width:1300px;
+margin:auto;
+padding-bottom:100px;
+}
+
+.project-card{
+background:#111827;
+padding:30px;
+border-radius:20px;
+margin-bottom:50px;
+box-shadow:0 5px 25px rgba(0,0,0,0.5);
+transition:0.4s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+}
+
+.project-card img{
+width:100%;
+border-radius:15px;
+margin-bottom:25px;
+}
+
+.project-card h2{
+font-size:40px;
+color:#f5b400;
+margin-bottom:20px;
+}
+
+.project-card p{
+font-size:18px;
+line-height:1.9;
+margin-bottom:25px;
+color:#ddd;
+}
+
+.project-btn{
+display:inline-block;
+padding:14px 30px;
+background:#f5b400;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:10px;
+transition:0.3s;
+}
+
+.project-btn:hover{
+background:white;
+}
+
+footer{
+background:#111827;
+padding:35px;
+text-align:center;
+font-size:16px;
+color:#aaa;
+}
+
+@media(max-width:900px){
+
+nav{
+padding:20px;
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.page-title h1{
+font-size:42px;
+}
+
+.project-card h2{
+font-size:30px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
 
 <nav>
-    <div class="navbar-container">
-        <div class="logo-brand">
-            <i class="fas fa-cog"></i> ALJABRI PROJECTS
-        </div>
-        <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="../index.html#contact" class="btn-nav">Contact</a></li>
-        </ul>
-    </div>
+
+<div class="logo">
+ALJABRI PROJECTS
+</div>
+
+<ul>
+<li><a href="../index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="about.html">About</a></li>
+</ul>
+
 </nav>
 
-<section style="padding-top: 150px; min-height: 80vh;">
-    <div class="section-header">
-        <div class="badge"><i class="fas fa-building"></i> Our Projects</div>
-        <h2 class="section-title">Completed Projects</h2>
-        <p class="section-subtitle">Showcasing our successful installations and crushing plant solutions</p>
-    </div>
+<section class="page-title">
 
-    <div class="products-showcase">
-        <div class="product-showcase-card">
-            <div class="product-image" style="height: 300px; background: #f0f0f0;">
-                <i class="fas fa-hard-hat" style="font-size: 80px; color: #ccc;"></i>
-            </div>
-            <h3>Quarry Extraction Plant</h3>
-            <p>Complete quarry management system with crushing and screening equipment installed in Sohar, Oman.</p>
-        </div>
+<h1>Completed Projects</h1>
 
-        <div class="product-showcase-card">
-            <div class="product-image" style="height: 300px; background: #f0f0f0;">
-                <i class="fas fa-industry" style="font-size: 80px; color: #ccc;"></i>
-            </div>
-            <h3>Construction Material Facility</h3>
-            <p>Automated crushing and screening plant for producing construction aggregates and sand.</p>
-        </div>
+<p>
+Crusher Plants • Quarry Solutions • Industrial Installations
+</p>
 
-        <div class="product-showcase-card">
-            <div class="product-image" style="height: 300px; background: #f0f0f0;">
-                <i class="fas fa-recycle" style="font-size: 80px; color: #ccc;"></i>
-            </div>
-            <h3>Recycling Center</h3>
-            <p>Full-scale recycling facility with impact crushers and screening systems for waste materials.</p>
-        </div>
-
-        <div class="product-showcase-card">
-            <div class="product-image" style="height: 300px; background: #f0f0f0;">
-                <i class="fas fa-truck" style="font-size: 80px; color: #ccc;"></i>
-            </div>
-            <h3>Mobile Crushing Station</h3>
-            <p>Portable crushing and screening unit for remote mining and construction sites.</p>
-        </div>
-    </div>
 </section>
 
-<footer class="footer">
-    <div class="footer-content">
-        <div class="footer-links">
-            <a href="../index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="services.html">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="about.html">About</a>
-        </div>
-        <p>© 2026 ALJABRI PROJECTS — All Rights Reserved</p>
-    </div>
+<div class="container">
+
+<div class="project-card">
+
+<img src="../images/quarries.jpg">
+
+<h2>
+Crusher Plant Project
+</h2>
+
+<p>
+Complete crushing and screening plant installation in Sohar Industrial Area with conveyor systems, vibrating screens and heavy-duty crushers.
+</p>
+
+<a href="../images/banner.jpg" target="_blank" class="project-btn">
+View Project
+</a>
+
+</div>
+
+<div class="project-card">
+
+<img src="../images/conveyor.jpg">
+
+<h2>
+Conveyor System Installation
+</h2>
+
+<p>
+Heavy-duty conveyor line installation for aggregate transportation with high-capacity material handling systems.
+</p>
+
+<a href="../images/conveyor.jpg" target="_blank" class="project-btn">
+View Project
+</a>
+
+</div>
+
+<div class="project-card">
+
+<img src="../images/screen.jpg">
+
+<h2>
+Vibrating Screen Plant
+</h2>
+
+<p>
+Professional vibrating screen setup with advanced material separation systems for quarry and mining operations.
+</p>
+
+<a href="../images/screen.jpg" target="_blank" class="project-btn">
+View Project
+</a>
+
+</div>
+
+<div class="project-card">
+
+<img src="../images/jaw-crusher.jpg">
+
+<h2>
+Jaw Crusher Installation
+</h2>
+
+<p>
+Industrial jaw crusher assembly and operational setup designed for high-performance crushing applications.
+</p>
+
+<a href="../images/jaw-crusher.jpg" target="_blank" class="project-btn">
+View Project
+</a>
+
+</div>
+
+<div class="project-card">
+
+<img src="../images/impact-crusher.jpg">
+
+<h2>
+Impact Crusher System
+</h2>
+
+<p>
+Impact crushing unit integrated with screening and conveyor systems for complete aggregate production.
+</p>
+
+<a href="../images/impact-crusher.jpg" target="_blank" class="project-btn">
+View Project
+</a>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 ALJABRI PROJECTS — ALL RIGHTS RESERVED
+
 </footer>
 
-<script src="../js/script.js"></script>
 </body>
 </html>
