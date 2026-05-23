@@ -30,12 +30,8 @@ border-bottom:1px solid rgba(255,255,255,0.08);
 }
 
 .logo img{
-height:75px;
-width:auto;
-display:block;
-object-fit:contain;
+width:190px;
 background:transparent;
-filter:drop-shadow(0 0 12px rgba(255,204,0,0.35));
 }
 
 nav{
@@ -214,55 +210,30 @@ color:#aaa;
 }
 
 .project-grid{
-display:flex;
-flex-direction:column;
-gap:40px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
 }
 
 .project-card{
 position:relative;
 overflow:hidden;
-border-radius:30px;
+border-radius:25px;
 background:#111;
-box-shadow:0 20px 50px rgba(0,0,0,0.45);
-
-opacity:0;
-transform:translateY(60px);
-animation:fadeUp 1s forwards;
-}
-
-.project-card:nth-child(1){
-animation-delay:0.2s;
-}
-
-.project-card:nth-child(2){
-animation-delay:0.4s;
-}
-
-.project-card:nth-child(3){
-animation-delay:0.6s;
-}
-
-.project-card:nth-child(4){
-animation-delay:0.8s;
-}
-
-.project-card:nth-child(5){
-animation-delay:1s;
-}
-
-.project-card:nth-child(6){
-animation-delay:1.2s;
+box-shadow:0 15px 40px rgba(0,0,0,0.35);
 }
 
 .project-card img{
 width:100%;
-height:520px;
+height:350px;
 
-object-fit:cover;
+object-fit:contain;
 
-transition:0.6s;
-display:block;
+background:#181818;
+
+padding:10px;
+
+transition:0.5s;
 }
 
 .project-card:hover img{
@@ -274,29 +245,12 @@ position:absolute;
 bottom:0;
 left:0;
 width:100%;
-padding:40px;
-
-background:
-linear-gradient(
-transparent,
-rgba(0,0,0,0.95)
-);
+padding:25px;
+background:linear-gradient(transparent,rgba(0,0,0,0.95));
 }
 
 .project-overlay h3{
-font-size:38px;
-font-weight:700;
-}
-
-/* SCROLL ANIMATION */
-
-@keyframes fadeUp{
-
-to{
-opacity:1;
-transform:translateY(0);
-}
-
+font-size:26px;
 }
 
 /* CONTACT */
@@ -406,11 +360,7 @@ display:none;
 }
 
 .project-card img{
-height:320px;
-}
-
-.project-overlay h3{
-font-size:28px;
+height:260px;
 }
 
 }
@@ -426,7 +376,7 @@ font-size:16px;
 }
 
 .logo img{
-height:60px;
+width:140px;
 }
 
 .about-stats{
@@ -435,18 +385,6 @@ gap:20px;
 
 .about-stats h3{
 font-size:30px;
-}
-
-.project-card img{
-height:240px;
-}
-
-.project-overlay{
-padding:25px;
-}
-
-.project-overlay h3{
-font-size:22px;
 }
 
 }
