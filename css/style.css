@@ -315,6 +315,68 @@ height:100%;
 border:0;
 }
 
+/* INQUIRY FORM */
+
+.contact-form-section{
+padding:120px 7%;
+background:#0d0d0d;
+text-align:center;
+}
+
+.contact-form-section h2{
+font-size:55px;
+margin-bottom:50px;
+color:white;
+}
+
+.inquiry-form{
+max-width:800px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea{
+width:100%;
+padding:18px 20px;
+background:#181818;
+border:1px solid rgba(255,255,255,0.08);
+border-radius:15px;
+color:white;
+font-size:16px;
+outline:none;
+font-family:'Poppins',sans-serif;
+}
+
+.inquiry-form textarea{
+height:180px;
+resize:none;
+}
+
+.inquiry-form input:focus,
+.inquiry-form textarea:focus{
+border-color:#ffcc00;
+}
+
+.inquiry-form button{
+padding:18px;
+background:#ffcc00;
+color:black;
+border:none;
+border-radius:50px;
+font-size:18px;
+font-weight:700;
+cursor:pointer;
+transition:0.4s;
+}
+
+.inquiry-form button:hover{
+background:white;
+transform:translateY(-4px);
+}
+
 /* FOOTER */
 
 footer{
